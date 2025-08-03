@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="../centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../script/cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="../../script/gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="../../script/lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../setup/01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../rootfs/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../~nanolinux/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#ubuntu-desktop" class="nav-link">Ubuntu Desktop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#ubuntu-server" class="nav-link">Ubuntu Server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#rootfs" class="nav-link">rootfs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#rootfs-debootstrap" class="nav-link">rootfs (debootstrap)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#live-cd" class="nav-link">Live CD</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="ubuntu-desktop">Ubuntu Desktop</h2>
+<p>(中文 + 最小安装)</p>
+<p>https://www.brsmedia.in/how-to-disable-snap-on-ubuntu-22-04/</p>
+<pre><code>sudo systemctl set-default graphical.target  
+sudo systemctl set-default multi-user.target  
+
+sudo systemctl disable snapd.socket
+sudo systemctl disable snapd.seeded.service
+sudo systemctl disable snapd.service
+
+Firefox 会使用 snap仓库
+https://ftp.mozilla.org/pub/firefox/releases/137.0.2/linux-x86_64/en-GB/firefox-137.0.2.tar.xz
+ln -s /opt/firefox/firefox /usr/bin/firefox
+
+离线安装 VSCode, 不能root运行; 切换到user, 执行startx, 初始设置，打开命令行执行code
+
+apt-get install --no-install-recommends &lt;xxx&gt;
+apt-cache show ubuntu-desktop | grep &quot;Depends&quot;
+apt-cache show ubuntu-desktop | grep &quot;Recommends&quot;
+</code></pre>
+<h2 id="ubuntu-server">Ubuntu Server</h2>
+<pre><code>非常多, 都会安装snap firefox
+sudo apt install ubuntu-gnome-desktop
+sudo apt install task-lxqt-desktop
+sudo apt install lxqt
+sudo apt install lubuntu-desktop
+
+//sudo dpkg-reconfigure sddm
+
+最小安装 (有设置，有壁纸，有文件管理器) 
+sudo apt install --no-install-recommends ubuntu-desktop-minimal // 没有网络管理器，联网报错
+sudo apt install ubuntu-desktop-minimal     // 网络正常，正常安装页面
+
+最小安装 (有设置，没有壁纸)
+sudo apt install gnome-session gnome-terminal 
+
+
+-------------------- On Ubuntu -------------------- 
+//sudo apt install lxqt sddm
+sudo apt --no-install-recommends install lxqt
+sudo apt install sddm
+ apt info lxqt-system-theme
+sudo apt install papirus-icon-theme // 解决 icon 不显示问题
+&gt;&gt; lxqt-about
+&gt;&gt; lxqt-config
+&gt;&gt; lxqt-config-appearance  // 方法2，解决 icon 不显示问题
+sudo apt purge lxqt sddm
+sudo apt autoremove
+
+-------------------- On Fedora -------------------- 
+dnf install @lxqt
+dnf remove @lxqt
+</code></pre>
+<p>i3 基于x11 (包含很多软件)</p>
+<pre><code>sudo apt install i3
+dpkg -l | grep x11-xserver-utils
+
+初始设置
+mkdir -p ~/.config/i3
+cp /etc/i3/config ~/.config/i3/
+
+sudo apt install xserver-xorg xinit
+startx
+
+======= i3 命令
+Alt + Enter     打开命令行
+Alt + Shift + Q 关闭
+</code></pre>
+<p>Hypyland 基于 xwayland  (安装很多开发环境gcc,cmake,golang,qt,gtk, github仓库)</p>
+<pre><code>不能root运行
+git clone -b 24.04 --depth=1  https://github.com/JaKooLit/Ubuntu-Hyprland.git ~/Ubuntu-Hyprland-24.04
+./install.sh
+</code></pre>
+<h2 id="rootfs">rootfs</h2>
+<pre><code>ubuntu-base-22.04-base-amd64.tar.gz
+https://cdimage.ubuntu.com/ubuntu-base/releases/22.04/release/
+https://mirrors.ustc.edu.cn/ubuntu-cdimage/ubuntu-base/releases/
+
+AnolisOS8.9-base-amd64-20240425.tar.xz
+https://cr-images-pub.oss-cn-hangzhou.aliyuncs.com/root/base/
+</code></pre>
+<h2 id="rootfs-debootstrap">rootfs (debootstrap)</h2>
+<pre><code>sudo apt install debootstrap
+sudo debootstrap --help
+ls -lh /usr/share/debootstrap/scripts  都是链接
+
+debootstrap --arch $ARCH $RELEASE  $DIR $MIRROR
+$ debootstrap --arch amd64 buster /mnt/rootfs-minbase http://mirrors.163.com/debian/
+$ chroot rootfs-minbase
+$ dpkg -l | wc -l
+163
+
+debootstrap --include linux-image-amd64,locales,grub-efi-amd64,vim,btrfs-progs,sudo --arch amd64 sid /mnt/rootfs http://mirrors.163.com/debian/
+
+sudo debootstrap --arch=mips buster /mnt/rootfs
+sudo debootstrap --variant=minbase --no-check-gpg --arch=amd64 
+sudo debootstrap --components main,universe,multiverse,restricted --variant minbase \
+ --include libc6,kysec-utils --exclude bash --no-check-gpg
+
+$ cd /mnt/rootfs
+$ sudo tar -czf /tmp/debian-sid-rootfs.tar.xz  .
+$ sudo tar -xf rootfs.tar.xz -C &lt;exampledir&gt;
+</code></pre>
+<p>chroot (QEMU)</p>
+<p>https://akhileshmoghe.github.io/_post/linux/debian_minimal_rootfs#remove-support-files-from-rootfs
+https://www.ddupan.top/posts/chroot-to-a-different-arch-in-linux/</p>
+<pre><code>$ sudo apt install qemu-user-static
+$ sudo apt install binfmt-support
+
+sudo debootstrap --arch arm64 --foreign buster /mnt/buster-arm64 http://mirrors.163.com/debian/
+sudo cp /usr/bin/qemu-aarch64-static buster-arm64/usr/bin/
+sudo cp /etc/resolv.conf buster-arm64/etc/
+
+$ sudo chroot /mnt/buster-arm64/
+</code></pre>
+<h2 id="live-cd">Live CD</h2>
+<pre><code>sudo apt install live-build  版本号1.20230502
+sudo apt install debootstrap
+
+sudo mkdir /mnt/live  &amp;&amp; cd 
+sudo lb config
+sudo lb build
+
+sudo  lb config --distribution bookworm \
+  --archive-areas &quot;main contrib non-free non-free-firmware&quot; \
+  --mirror-binary https://mirrors.163.com/debian \
+  --mirror-binary-security https://mirrors.163.com/debian-security \
+  --mirror-bootstrap https://mirrors.163.com/debian \
+  --mirror-chroot https://mirrors.163.com/debian \
+  --mirror-chroot-security https://mirrors.163.com/debian-security \
+  --mirror-debian-installer https://mirrors.163.com/debian
+
+最终生成 live-image-amd64.hybrid.iso  (总共284 packages)
+默认用户”user“密码”live“
+默认 main https://deb.debian.org/debian  
+完整系统 
+deb http://mirrors/ustc.edu.cn/debian bookworm  main contrib non-free non-free-firmware
+deb http://mirrors/ustc.edu.cn/debian bookworm-updates  main contrib non-free non-free-firmware
+
+选择ISO混合镜像
+lb config --binary-images iso-hybrid --architecture amd64 --distribution sid --boot-loaders syslinux
+</code></pre>
+<p>Debian-XFCE</p>
+<pre><code>cd /mnt/live-xfce
+sudo lb config --distribution bookworm \
+  --debian-installer live \
+  --debian-installer-gui true \
+  --iso-application &quot;DebianXfce&quot; \
+  --iso-publisher &quot;DebianXfce Project&quot; \
+  --iso-volume &quot;DebianXfce Live&quot; \
+  --archive-areas &quot;main contrib non-free non-free-firmware&quot; \
+  --security false \
+  --mirror-binary https://mirrors.163.com/debian \
+  --mirror-bootstrap https://mirrors.163.com/debian \
+  --mirror-chroot https://mirrors.163.com/debian \
+  --mirror-debian-installer https://mirrors.163.com/debian
+
+$ dpkg -l | wc -l
+288
+
+重命名
+DebianXfce-live-12.7-amd64-20230502.iso
+
+(fcitx不显示zh选项，应该是fcitx5-chinese-addons， 而且系统是英文)
+
+----- conf/package-lists/application.list.chroot    (1.63 GB  安装包823)
+(没有build-essential, 没有xfce-terminal[uterm代替], 没有dock,  没有mousepad editor)
+xfce4
+firefox-esr
+vim
+git
+wget
+rsync
+fcitx5
+
+---- conf/package-lists/application.list.chroot  (2.06 GB  安装包1363)
+(没有build-essential, 有一套libreoffice, 有xfce-terminal, 有dock, 有mousepad)
+task-xfce-desktop  (软件数量太夸张了，尽量不要用这个)
+firefox-esr
+vim
+git
+wget
+rsync
+fcitx5
+
+--mirror-binary：定义 Live 系统用户使用的软件源镜像，配置在最终的二进制映像中。
+--mirror-binary-security：定义 Live 系统用户使用的安全更新软件源镜像，配置在最终的二进制映像中。
+
+--mirror-bootstrap：定义构建过程中 bootstrap 阶段使用的软件源镜像。
+--mirror-chroot：定义构建过程中 chroot 阶段使用的软件源镜像。
+--mirror-chroot-security：定义构建过程中 chroot 阶段使用的安全更新软件源镜像。
+--mirror-debian-installer：定义构建过程中用于获取 Debian Installer 的软件源镜像。
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>

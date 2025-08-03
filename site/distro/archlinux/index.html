@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="../centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="../ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../script/cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="../../script/gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="../../script/lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../setup/01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../../linux/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../centos/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#history" class="nav-link">HISTORY</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#bios-or-efi" class="nav-link">BIOS or EFI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#mbr-or-gpt" class="nav-link">MBR or GPT</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#blackarch-linux-20230501" class="nav-link">blackarch-linux-2023.05.01</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#archlinux-20250501" class="nav-link">archlinux-2025.05.01</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#efi-systemd-boot" class="nav-link">引导 EFI (systemd-boot)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#bios-extlinuxsyslinux" class="nav-link">引导 BIOS (extlinux/syslinux)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#reboot" class="nav-link">Reboot</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#xorg-xinit" class="nav-link">xorg-xinit</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#desktop-environment-or-tile-window-manager" class="nav-link">Desktop environment or Tile window manager ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#arch-build-system" class="nav-link">Arch build system</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#about-links" class="nav-link">About Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="history">HISTORY</h2>
+<pre><code>pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt networkmanager vim nano sudo zsh bash bash-completion
+
+pacman -S openssh
+pacman -S less wget  zip unzip
+</code></pre>
+<h2 id="bios-or-efi">BIOS or EFI</h2>
+<p>/sys/firmware/efi exists means system uses UEFI</p>
+<pre><code>$ nano  /etc/pacman.d/mirrorlist
+Server = http://mirrors.aliyun.com/archlinux/$repo/os/$arch
+
+$ pacman -S efibootmgr
+$ efibootmgr
+EFI variables are not supported on this system.
+</code></pre>
+<h2 id="mbr-or-gpt">MBR or GPT</h2>
+<pre><code>$ fdisk -l 查看gpt还是dos
+$ fdisk /dev/sda
+输入m，输入o修改dos, 输入g修改gpt, 输入a修改boot标签
+输入d 删除所有分区
+  Create a new label
+   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty MBR (DOS) partition table
+   s   create a new empty Sun partition table
+
+$ fdisk /dev/sda  添加两个p分区，sda1=300M, 设置boot
+$ mkfs.fat -F 32 /dev/sda1
+$ mkfs.ext4 /dev/sda2
+
+====== 其他分区工具 
+cfdisk  /dev/sda  两个分区 sda1 EFI, sda2 linux filesystem
+</code></pre>
+<h2 id="blackarch-linux-20230501">blackarch-linux-2023.05.01</h2>
+<pre><code>root:x:0:0::/root:/bin/bash
+Password : blackarch
+
+liveuser:x:1000:984::/home/liveuser:/bin/zsh
+Password : blackarch
+
+$ systemctl status systemd-networkd.service
+$ systemctl enable --now NetworkManager.service
+
+$ vim /etc/ssh/sshd_config
+$ systemctl start sshd
+
+$ pacman -Q | wc -l
+1527
+6374
+</code></pre>
+<h2 id="archlinux-20250501">archlinux-2025.05.01</h2>
+<p>Step1: RootFS</p>
+<pre><code>mount /dev/sda2 /mnt
+mount --mkdir /dev/sda1 /mnt/boot
+
+修改宿主机 /etc/pacman.d/mirrorlist
+pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt networkmanager vim nano sudo zsh bash bash-completion
+
+genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre>
+<p>Step2: chroot</p>
+<blockquote>
+<p>umount -R /mnt  ;; before reboot</p>
+</blockquote>
+<pre><code>arch-chroot /mnt
+vim /etc/hostname
+vim /etc/hosts
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+vim /etc/locale.gen
+locale-gen
+# 这里不建议将 en_US.UTF-8 改为zh_CN.UTF-8 ，这样会导致终端乱码！ 
+echo &quot;LANG=en_US.UTF-8&quot; &gt;&gt; /etc/locale.conf
+echo &quot;LANG=en_US.UTF-8&quot; &gt;&gt; /etc/profile
+</code></pre>
+<p>Step3: grub</p>
+<pre><code>passwd root
+pacman -S grub
+
+====== msdos
+grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
+====== gpt
+pacman -S efibootmgr
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --recheck
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB 
+</code></pre>
+<h2 id="efi-systemd-boot">引导 EFI (systemd-boot)</h2>
+<p>GPT分区: 轻量，代替grub</p>
+<pre><code>$&gt; rm -rf /boot/EFI /boot/grub
+
+检查引导
+$&gt; bootctl
+
+创建 /boot/EFI  /boot/loader
+$&gt; bootctl install
+
+修改 /boot/loader/loader.conf
+default arch.conf
+timeout 3
+console-mode keep
+
+新建 /boot/loader/entries/arch.conf
+title   Arch Linux
+linux   /vmlinuz-linux
+initrd  /initramfs-linux.img
+options root=UUID=8817c0e4-a5d3-4286-ae19-fccdf47866a9 rw
+</code></pre>
+<h2 id="bios-extlinuxsyslinux">引导 BIOS (extlinux/syslinux)</h2>
+<p>MBR分区: 
+https://wiki.archlinuxcn.org/wiki/Syslinux</p>
+<p>isolinux 用于cdrom启动<br />
+pxelinux 用于网络启动<br />
+syslinux/extlinux 用于u盘或者cf卡启动</p>
+<pre><code>apt-get install extlinux syslinux-common
+pacman -Q | grep syslinux
+ls /usr/lib/syslinux/bios/
+which extlinux
+
+$&gt; pacstrap /mnt syslinux
+mkdir /boot/syslinux
+cp /usr/lib/syslinux/bios/*.c32 /boot/syslinux/ 
+extlinux --install /boot/syslinux/
+dd bs=440 count=1 conv=notrunc if=/usr/lib/syslinux/bios/mbr.bin of=/dev/sda
+
+/boot/syslinux/syslinux.cfg
+/syslinux/syslinux.cfg
+/syslinux.cfg
+
+* BIOS: /boot/syslinux/syslinux.cfg
+* UEFI: esp/EFI/syslinux/syslinux.cfg
+* 会显示 boot: 提示符并在 5 秒后自动启动
+PROMPT 1
+TIMEOUT 50
+DEFAULT arch
+
+LABEL arch
+    LINUX ../vmlinuz-linux
+    APPEND root=/dev/sda2 rw
+    INITRD ../initramfs-linux.img
+
+LABEL archfallback
+    LINUX ../vmlinuz-linux
+    APPEND root=/dev/sda2 rw
+    INITRD ../initramfs-linux-fallback.img
+
+* 启动目录
+* 依赖 {menu,libutil}.c32
+UI menu.c32
+PROMPT 0
+
+MENU TITLE Boot Menu
+TIMEOUT 50
+DEFAULT arch
+
+LABEL arch
+    MENU LABEL Arch Linux
+    LINUX ../vmlinuz-linux
+    APPEND root=/dev/sda2 rw
+    INITRD ../initramfs-linux.img
+
+LABEL archfallback
+    MENU LABEL Arch Linux Fallback
+    LINUX ../vmlinuz-linux
+    APPEND root=/dev/sda2 rw
+    INITRD ../initramfs-linux-fallback.img
+
+* 图形化启动目录
+* 依赖 vesamenu.c32
+UI vesamenu.c32
+DEFAULT arch
+PROMPT 0
+MENU TITLE Boot Menu
+MENU BACKGROUND splash.png
+TIMEOUT 50
+
+MENU WIDTH 78
+MENU MARGIN 4
+MENU ROWS 5
+MENU VSHIFT 10
+MENU TIMEOUTROW 13
+MENU TABMSGROW 11
+MENU CMDLINEROW 11
+MENU HELPMSGROW 16
+MENU HELPMSGENDROW 29
+
+# Refer to https://wiki.syslinux.org/wiki/index.php/Comboot/menu.c32
+
+MENU COLOR border       30;44   #40ffffff #a0000000 std
+MENU COLOR title        1;36;44 #9033ccff #a0000000 std
+MENU COLOR sel          7;37;40 #e0ffffff #20ffffff all
+MENU COLOR unsel        37;44   #50ffffff #a0000000 std
+MENU COLOR help         37;40   #c0ffffff #a0000000 std
+MENU COLOR timeout_msg  37;40   #80ffffff #00000000 std
+MENU COLOR timeout      1;37;40 #c0ffffff #00000000 std
+MENU COLOR msg07        37;40   #90ffffff #a0000000 std
+MENU COLOR tabmsg       31;40   #30ffffff #00000000 std
+
+LABEL arch
+    MENU LABEL Arch Linux
+    LINUX ../vmlinuz-linux
+    APPEND root=/dev/sda2 rw
+    INITRD ../initramfs-linux.img
+
+LABEL archfallback
+    MENU LABEL Arch Linux Fallback
+    LINUX ../vmlinuz-linux
+    APPEND root=/dev/sda2 rw
+    INITRD ../initramfs-linux-fallback.img
+
+=======
+mkisofs -o &lt;iso-image-to-create&gt; \
+  -b &lt;current-directory&gt;/isolinux.bin \
+  -c &lt;current-directory&gt;/boot.cat \
+  -no-emul-boot -boot-load-size 4 -boot-info-table \
+  &lt;directory-of-files-and-directory-to-be-put-in-the-image&gt; 
+</code></pre>
+<h2 id="reboot">Reboot</h2>
+<pre><code>$ systemctl enable NetworkManager 
+也可以手动激活网络
+nmtui  激活connection  或者 nmcli dev up ens33
+
+$ pacman -S openssh 
+$ systemctl enable sshd
+修改 sshd_config  {PermitRootLogin yes; PasswordAuthentication yes}
+
+pacman -S less wget  zip unzip
+pacman -S arch-install-scripts  // 有 arch-install, pacstrap
+pacman -S helix nano
+ln -s /usr/bin/helix  /usr/bin/vi
+&gt; helix相当于一个已经配置完整的vim, space查看功能
+&gt; nano复制比较方便
+</code></pre>
+<h2 id="xorg-xinit">xorg-xinit</h2>
+<p>https://bashcommandnotfound.cn/article/linux-xinit-command</p>
+<p>xorg 不包含xorg-xinit; 可选 xterm</p>
+<pre><code>$&gt; pacman -S xorg xorg-xinit 
+$&gt; pacman -Q | grep xorg
+
+可能是浏览器
+pacman -S w3m
+w3m suckless.org
+
+wget http://dl.suckless.org/dwm/dwm-6.2.tar.gz
+wget http://dl.suckless.org/tools/dmenu-5.0.tar.gz
+wget http://dl.suckless.org/st/st-0.8.4.tar.gz
+
+$&gt; pacman -S base-devel
+cd dwm
+make
+make install  # /usr/local/bin/dwm
+
+
+cd dmenu
+make
+make install  # /usr/local/bin/dmenu
+
+
+cd st
+make 
+make install  # /usr/local/bin/st
+</code></pre>
+<p>重启reboot ;; 执行 startx;; Alt + Shift + Enter</p>
+<pre><code>创建  ~/.xinitrc
+exec dwm
+</code></pre>
+<p>配置 fluxbox</p>
+<pre><code>$&gt; pacman -S fluxbox  xterm
+/usr/bin/startfluxbox
+
+创建  ~/.xinitrc
+#!/bin/sh
+xterm &amp;
+exec startfluxbox
+
+
+重启reboot ;; 执行 startx;; 右键xterm
+或者执行 xinit
+
+https://man.archlinux.org/man/startx.1.en
+优先级
+$(HOME)/.xinitrc
+$(HOME)/.xserverrc
+/etc/X11/xinit/xinitrc
+</code></pre>
+<p>登录启动启动 startx</p>
+<pre><code>#
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] &amp;&amp; . ~/.bashrc
+if [ -z &quot;${DISPLAY}&quot; ] &amp;&amp; [ &quot;${XDG_VTNR}&quot; -eq 1 ]; then
+   exec startx
+ fi
+
+========= 
+if [[ -z $DISPLAY ]] &amp;&amp; [[ $(tty) = /dev/tty1 ]]; then
+    startx
+fi
+
+========
+vim ~/.zprofile
+
+if systemctl -q is-active graphical.target &amp;&amp; [[ ! $DISPLAY &amp;&amp; $XDG_VTNR -eq 1 ]]; then
+  exec startx
+fi
+</code></pre>
+<p>自动登录 root</p>
+<p>https://unix.stackexchange.com/questions/42359/how-can-i-autologin-to-desktop-with-systemd</p>
+<pre><code>mkdir -p /etc/systemd/system/getty@tty1.service.d/
+touch /etc/systemd/system/getty@tty1.service.d/override.conf
+
+[Service]
+ExecStart=
+ExecStart=-/usr/bin/agetty --autologin root --noclear %I $TERM
+
+==== 参考
+systemctl edit getty@tty1
+systemctl -q is-active graphical.target &amp;&amp; echo foobar
+</code></pre>
+<h2 id="desktop-environment-or-tile-window-manager">Desktop environment or Tile window manager ?</h2>
+<pre><code>pacman -S xorg  # Install 330M  包含了 xorg-server, 等于--needed安装包数量
+pacman -S --needed qemu-desktop
+pacman -S firefox vlc 
+</code></pre>
+<p>gnome</p>
+<pre><code>// Install 1.7G  包含了gdm（可以直接root登录）
+// pacman -S gnome 
+
+# Install 890M  足够使用：桌面环境(文件管理器), 终端, 文件编辑器，系统设置
+pacman -S gnome-desktop gnome-terminal gnome-text-editor gnome-system-monitor gnome-control-center gdm
+
+systemctl enable gdm
+pacman -S gnome-disk-utility  不是必须
+</code></pre>
+<p>lxqt</p>
+<pre><code>pacman -S lxqt  // groups
+pacman -S breeze-icons   // icon theme (e.g. breeze-icons or oxygen-icons).
+
+# create user
+useradd -m -g users -s /bin/bash slackman
+pacman -S sddm
+systemctl enable sddm
+
+允许root登录
+$ vim /etc/sddm.conf
+MinimumUid=0
+
+pacman -S deepin-community-wallpapers
+/usr/share/wallpapers/deepin
+</code></pre>
+<h2 id="arch-build-system">Arch build system</h2>
+<p>https://wiki.archlinux.org/title/Arch_build_system</p>
+<p>https://superuser.com/questions/1350308/get-source-for-arch-linux-package</p>
+<p>https://lists.archlinux.org/pipermail/arch-general/2018-August/045460.html</p>
+<p>The Arch build system (ABS) is a system for building and packaging software from source code</p>
+<pre><code>$&gt; sudo pacman -Syu base-devel git
+
+asp export nano
+makepkg -s --skippgpcheck
+
+$&gt; pacman -Q | grep nano
+$&gt; sudo pacman -R nano
+$&gt; sudo pacman -S
+$&gt; sudo pacman -U nano-7.2-1-x86_64.pkg.tar.zst
+
+没有这个软件
+$&gt; sudo pacman -S asp
+Download the PKGBUILD 
+$&gt; asp export &lt;package_name&gt;
+Download the source files
+$&gt; cd xxx
+$&gt; makepkg -do
+
+-s选项会自动安装所有依赖包，
+-i选项会在编译完成后自动安装生成的包
+$&gt; makepkg -si
+
+========  Usage: get-source xxx
+function get-source()
+{
+    asp export $1 &amp;&amp; \
+    pushd $1 &amp;&amp; \
+    makepkg -do --skippgpcheck &amp;&amp; \
+    pushd src
+}
+
+========= asp可能是AUR仓库
+https://www.maketecheasier.com/use-aur-in-arch-linux
+$&gt; useradd cnki -G wheel -m
+$&gt; passwd cnki
+$&gt; nano /etc/sudoers.d/cnki
+cnki ALL=(ALL:ALL) ALL
+cnki ALL=(ALL:ALL) NOPASSWD:ALL
+
+su cnki
+cd /tmp
+
+https://aur.archlinux.org/packages/asp
+只有一个PKGBUILD
+git clone https://aur.archlinux.org/asp.git  --depth=1
+makepkg -si
+makepkg -si --skippgpcheck
+
+git clone https://aur.archlinux.org/yay.git --depth=1
+makepkg -si
+
+yay -Ss package
+
+</code></pre>
+<h2 id="about-links">About Links</h2>
+<p>[pacman包管理] https://knightwood.github.io/posts/dd409eba/</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>

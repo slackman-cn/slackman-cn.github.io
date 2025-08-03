@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../distro/archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../script/cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="../../script/gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="../../script/lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="../03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../01-base/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../03-dockerfile/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#development" class="nav-link">Development</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#editor-fonts" class="nav-link">Editor &amp; Fonts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#editorconfig" class="nav-link">EditorConfig</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#ide" class="nav-link">在线 IDE</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#java-ide" class="nav-link">Java IDE</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="development">Development</h2>
+<p>https://ftp.mozilla.org/pub/firefox/releases/137.0.2/linux-x86_64/en-GB/firefox-137.0.2.tar.xz</p>
+<p>https://cdn1.waterfox.net/waterfox/releases/6.5.7/Linux_x86_64/waterfox-6.5.7.tar.bz2</p>
+<pre><code>sudo apt install language-pack-en  
+sudo apt install language-pack-zh-hans
+&gt;&gt; locale -a
+&gt;&gt; cat /etc/default/locale
+
+
+sudo apt install build-essential cmake ninja-build
+sudo apt install crossbuild-essential-arm64
+
+eclipse-cpp.tar.gz
+sudo apt install qtbase5-dev
+sudo apt install libwxgtk3.2-dev codelbocks
+sudo apt install --no-install-recommends qtcreator
+
+&gt;&gt; user-wide
+sudo apt install python3-venv
+python3 -m venv myenv
+source myenv/bin/activate
+</code></pre>
+<h2 id="editor-fonts">Editor &amp; Fonts</h2>
+<p>sudo apt install mousepad vim</p>
+<pre><code>&gt;&gt; vi .vimrc
+if has('mouse')
+  set mouse-=a
+endif
+
+&gt;&gt; fc-list | grep JetBrains
+&gt;&gt; fc-cache -v
+
+https://www.jetbrains.com/lp/mono/
+sudo unzip JetBrainsMono-2.304.zip -d /usr/local/share/fonts/JetBrains-Mono
+'Jetbrains Mono', 'Droid Sans Mono', 'monospace', monospace
+
+# jetbrains nerd font. Necessary for waybar
+https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
+mkdir -p ~/.local/share/fonts/JetBrainsMonoNerd
+tar -xJkf JetBrainsMono.tar.xz -C ~/.local/share/fonts/JetBrainsMonoNerd
+
+# Fantasque Mono Nerd Font
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FantasqueSansMono.zip
+https://rubjo.github.io/victor-mono/VictorMonoAll.zip
+$HOME/.local/share/fonts/FantasqueSansMono
+$HOME/.local/share/fonts/VictorMono
+</code></pre>
+<h2 id="editorconfig">EditorConfig</h2>
+<p>VSCode 需要插件，IDEA不需要</p>
+<p>https://editorconfig.org/</p>
+<pre><code>cat &lt;&lt; EOF &gt; .editorconfig
+root = true
+[*]
+indent_style = space
+indent_size = 4
+EOF
+</code></pre>
+<h2 id="ide">在线 IDE</h2>
+<p>MIT协议
+https://github.com/gitpod-io/openvscode-server</p>
+<pre><code>容器有问题，挂载的目录都是root权限，容器内是普通用户
+podman run  -d  --name code --init -p 3001:3000 \
+   -v &quot;$(pwd):/home/workspace:cached&quot; gitpod/openvscode-server
+
+直接启动可以，工作目录是 $home
+openvscode-server-v1.96.0-linux-x64.tar.gz
+./bin/openvscode-server --port 3001
+./bin/openvscode-server --host 192.168.1.210
+</code></pre>
+<h2 id="java-ide">Java IDE</h2>
+<p>https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml</p>
+<pre><code>cnki@192:~$ tail -n2 .bashrc 
+export JAVA_HOME=/opt/jdk-17
+export PATH=$JAVA_HOME/bin:$PATH
+
+// 更新时间戳
+cnki@192:~/Applications$ tar -xmf gigaideCE-242.21829.142.2.tar.gz
+~/.config/GIGAIDE
+~/.cache/GIGAIDE
+~/.local/share/GIGAIDE
+
+Create Desktop Entry
+Appearance =&gt; Use Custom Font 
+Editor =&gt; CodeStyle =&gt; Import Scheme (intellij-java-google-style.xml)
+Plugin TestMe已安装，方法名context menu
+</code></pre>
+<p>https://mvn.coderead.cn/</p>
+<pre><code>    &lt;properties&gt;
+        &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
+        &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;maven.test.skip&gt;true&lt;/maven.test.skip&gt;
+    &lt;/properties&gt;
+
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;
+            &lt;artifactId&gt;logback-classic&lt;/artifactId&gt;
+            &lt;version&gt;1.5.6&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+            &lt;artifactId&gt;junit-jupiter&lt;/artifactId&gt;
+            &lt;version&gt;5.10.2&lt;/version&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>

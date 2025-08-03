@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../distro/archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="../gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="../groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="../ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../setup/01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../java_native_access/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../python/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#install" class="nav-link">Install</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#lua" class="nav-link">Lua 语法</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">执行系统命令</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#function" class="nav-link">自定义模块 function</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#object" class="nav-link">自定义模块 object</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#about-links" class="nav-link">About Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="install">Install</h2>
+<pre><code>$ yum install lua
+$ sudo apt install lua5.3
+/usr/bin/lua
+/usr/bin/luac
+
+$ lua -v
+$ lua
+print(1+1)
+
+$ ldd /usr/local/bin/lua
+        linux-vdso.so.1 (0x00007fff2eb34000)
+        libm.so.6 =&gt; /lib/x86_64-linux-gnu/libm.so.6 (0x00007f83d3087000)
+        libc.so.6 =&gt; /lib/x86_64-linux-gnu/libc.so.6 (0x00007f83d2e5e000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007f83d31b9000)
+</code></pre>
+<p><a href="https://www.lua.org/ftp/lua-5.4.7.tar.gz">https://www.lua.org/ftp/lua-5.4.7.tar.gz</a></p>
+<pre><code>yum install @development
+yum install readline-devel ncurses-devel
+sudo apt install build-essential cpp make binutils
+
+$ make linux
+$ make test
+$ make install  
+// make install local
+// make install INSTALL_TOP=/opt/lua
+make
+make install        安装到 /usr/local
+make install local  安装到 ./install
+
+编译结果  /usr/local/{bin,include,lib,man}
+TO_BIN= lua luac
+TO_INC= lua.h luaconf.h lualib.h lauxlib.h lua.hpp
+TO_LIB= liblua.a
+TO_MAN= lua.1 luac.1
+
+==== 静态编译 (alma报错, arch成功)
+$ vim src/Makefile
+MYLDFLAGS=-static
+</code></pre>
+<h2 id="lua">Lua 语法</h2>
+<pre><code>区分大小写
+
+</code></pre>
+<h2 id="_1">执行系统命令</h2>
+<pre><code>Lua有两种执行系统命令的方法：os.execute, io.popen
+
+os.execute 返回的是命令执行的状态，一共返回3个值。
+第一个值是true或nil, true表示命令成功执行完，否则返回nil。
+第二个值是exit时，表示正常终止，第三个值表示退出的状态码。
+第二个值是signal时，表示信号终止，第三个值表示终止的信号。
+
+&gt; os.execute(&quot;pwd&quot;)
+true exit 0
+&gt; os.execute(&quot;pwdx&quot;)
+nil exit 127
+
+io.popen 启动一个新进程执行命令，并返回一个文件句柄，可以使用该文件句柄读取返回的数据。
+例如,或通过这个方法获得文件列表
+local f = io.popen(&quot;ls&quot;)
+print(f:read(&quot;*a&quot;))
+</code></pre>
+<h2 id="function">自定义模块 function</h2>
+<pre><code>LOG = require('log')
+print(LOG)
+LOG()
+
+------- 导出函数 log.lua
+local function log(self)
+    print('hello log')
+end
+
+return log
+</code></pre>
+<h2 id="object">自定义模块 object</h2>
+<pre><code>logging = require('logging')
+logging.msg()
+
+local logger = logging.file(&quot;test%s.log&quot;, &quot;%Y-%m-%d&quot;)
+
+
+5.2 版本之后，require 不再定义全局变量，需要保存其返回值。
+$ require &quot;luasql.mysql&quot;
+需要写成:
+$ luasql = require &quot;luasql.mysql&quot;
+
+------- 导出对象 logging.lua
+local logging =  {}
+logging._VERSION = &quot;1.0&quot;
+
+function logging.msg()
+    print('hello logging: ', logging._VERSION)
+end
+
+if _VERSION &lt; 'Lua 5.2' then
+    _G.logging = logging
+end
+
+return logging
+</code></pre>
+<p>加载路径</p>
+<pre><code>export LUA_PATH=$PWD/scripts/
+export LUA_PATH='/opt/lua;;'    # 原来的默认路径，里面没用文件
+
+
+lua: ./hello.lua:5: module 'logging' not found:
+        no field package.preload['logging']
+        no file '/usr/local/share/lua/5.4/logging.lua'
+        no file '/usr/local/share/lua/5.4/logging/init.lua'
+        no file '/usr/local/lib/lua/5.4/logging.lua'
+        no file '/usr/local/lib/lua/5.4/logging/init.lua'
+        no file './logging.lua'
+        no file './logging/init.lua'
+        no file '/usr/local/lib/lua/5.4/logging.so'
+        no file '/usr/local/lib/lua/5.4/loadall.so'
+        no file './logging.so'
+stack traceback:
+        [C]: in function 'require'
+        ./hello.lua:5: in main chunk
+        [C]: in ?
+
+root@a09a0cb548d3:~# export LUA_PATH=/opt/lua
+root@a09a0cb548d3:~# ./hello.lua
+hello
+lua: ./hello.lua:5: module 'logging' not found:
+        no field package.preload['logging']
+        no file '/opt/lua'
+        no file '/usr/local/lib/lua/5.4/logging.so'
+        no file '/usr/local/lib/lua/5.4/loadall.so'
+        no file './logging.so'
+stack traceback:
+        [C]: in function 'require'
+        ./hello.lua:5: in main chunk
+        [C]: in ?
+</code></pre>
+<h1 id="about-links">About Links</h1>
+<p><a href="https://forkful.ai/zh/lua/files-and-io/creating-a-temporary-file/">https://forkful.ai/zh/lua/files-and-io/creating-a-temporary-file/</a></p>
+<p><strong>LOG</strong></p>
+<p><a href="https://codeberg.org/imo/log.lua">https://codeberg.org/imo/log.lua</a></p>
+<p><a href="https://github.com/lunarmodules/lualogging.git">https://github.com/lunarmodules/lualogging.git</a></p>
+<p><strong>Exec</strong></p>
+<p><a href="https://forkful.ai/zh/lua/files-and-io/creating-a-temporary-file/">https://forkful.ai/zh/lua/files-and-io/creating-a-temporary-file/</a></p>
+<p><a href="https://luabyexample.techplexlabs.com/execing-processes/">https://luabyexample.techplexlabs.com/execing-processes/</a></p>
+<p><a href="https://github.com/GUI/lua-shell-games.git">https://github.com/GUI/lua-shell-games.git</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>

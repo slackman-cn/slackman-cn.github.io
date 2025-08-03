@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="../ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../script/cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="../../script/gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="../../script/lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../setup/01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../archlinux/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../rootfs/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#centos-7-minimal" class="nav-link">CentOS-7-Minimal</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#desktop" class="nav-link">Desktop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#livecd" class="nav-link">LiveCD</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#centos-baserepo" class="nav-link">CentOS-Base.repo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="centos-7-minimal">CentOS-7-Minimal</h2>
+<p>CentOS-7-x86_64-Minimal-2009.iso</p>
+<pre><code>[root@centos ~]# ldd --version
+ldd (GNU libc) 2.17
+
+[root@centos ~]# uname -r
+3.10.0-1160.el7.x86_64
+
+[root@centos ~]# rpm -qa | wc -l
+299
+
+[root@centos ~]# cat /etc/os-release
+NAME=&quot;CentOS Linux&quot;
+VERSION=&quot;7 (Core)&quot;
+ID=&quot;centos&quot;
+ID_LIKE=&quot;rhel fedora&quot;
+VERSION_ID=&quot;7&quot;
+PRETTY_NAME=&quot;CentOS Linux 7 (Core)&quot;
+ANSI_COLOR=&quot;0;31&quot;
+CPE_NAME=&quot;cpe:/o:centos:centos:7&quot;
+HOME_URL=&quot;https://www.centos.org/&quot;
+BUG_REPORT_URL=&quot;https://bugs.centos.org/&quot;
+
+CENTOS_MANTISBT_PROJECT=&quot;CentOS-7&quot;
+CENTOS_MANTISBT_PROJECT_VERSION=&quot;7&quot;
+REDHAT_SUPPORT_PRODUCT=&quot;centos&quot;
+REDHAT_SUPPORT_PRODUCT_VERSION=&quot;7&quot;
+
+[root@centos ~]# lsblk
+NAME            MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda               8:0    0   20G  0 disk
+├─sda1            8:1    0    1G  0 part /boot
+└─sda2            8:2    0   19G  0 part
+  ├─centos-root 253:0    0   17G  0 lvm  /
+  └─centos-swap 253:1    0    2G  0 lvm  [SWAP]
+sr0              11:0    1 1024M  0 rom
+
+[root@centos ~]# df -hT
+Filesystem              Type      Size  Used Avail Use% Mounted on
+devtmpfs                devtmpfs  3.9G     0  3.9G   0% /dev
+tmpfs                   tmpfs     3.9G     0  3.9G   0% /dev/shm
+tmpfs                   tmpfs     3.9G  8.6M  3.9G   1% /run
+tmpfs                   tmpfs     3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/centos-root xfs        17G  1.3G   16G   8% /
+/dev/sda1               xfs      1014M  137M  878M  14% /boot
+tmpfs                   tmpfs     799M     0  799M   0% /run/user/0
+</code></pre>
+<h2 id="desktop">Desktop</h2>
+<pre><code>yum grouplist
+yum grouplist --installed // not support
+yum grouplist --ids       // not support
+
+yum groupinstall 'X Window System'
+yum groups install &quot;GNOME Desktop&quot;
+yum remove gnome-initial-setup
+
+# Others
+yum groups install &quot;KDE Plasma Workspaces&quot;
+yum groups install &quot;Graphical Administration Tools&quot;
+
+
+====== startx
+systemctl set-default graphical.target
+systemctl set-default multi-user.target
+</code></pre>
+<h2 id="livecd">LiveCD</h2>
+<p>CentOS 7</p>
+<pre><code>#https://github.com/livecd-tools
+#https://wiki.mageia.org/en/Using_the_LiveCD_Tools
+yum install livecd-tools
+yum install glibc-langpack-zh -y
+yum install glibc-langpack-en -y
+
+#centos-7-en.cfg
+#centos-7-jp.cfg
+livecd-creator --verbose \
+--config=centos-7-en.cfg \
+--fslabel=&quot;CentOS-7-x86_64-LIVE-2009-en&quot; \
+--title=&quot;CentOS 7 LIVE 2009&quot; \
+--product=&quot;CentOS 7 LIVE 2009 (en)&quot;
+
+####
+可以用最近的7.9.2009
+https://github.com/lunatilia/centos-7-livemedia-japanese/tree/master
+
+修改设置
+repo --name=base \
+ --baseurl=http://mirrors.cloud.tencent.com/centos/7.9.2009/os/x86_64/
+selinux --disabled
+firewall --disabled
+</code></pre>
+<p>Fedora 41</p>
+<blockquote>
+<p>qemu-kvm -m 2048 -vga qxl -cdrom fedora-i3-live-x86_64.iso</p>
+</blockquote>
+<pre><code>yum install glibc-langpack-zh -y
+yum install glibc-langpack-en -y
+sudo dnf install livecd-tools
+sudo dnf install pykickstart
+
+less /usr/share/doc/livecd-tools/livecd-fedora-minimal.ks
+https://github.com/livecd-tools/livecd-tools/blob/main/config/livecd-fedora-minimal.ks
+
+curl &quot;http://mirrors.fedoraproject.org/mirrorlist?repo=rawhide&amp;arch=x86_64&quot;
+https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Everything/x86_64/os/
+https://mirrors.aliyun.com/fedora/development/rawhide/Everything/x86_64/os/
+
+sudo livecd-creator --verbose \
+  --config=livecd-fedora-minimal.ks \
+  --fslabel=&quot;Fedora-41-x86_64-LIVE-2024-en&quot; \
+  --title=&quot;Fedora 41 LIVE&quot; \
+  --product=&quot;Fedora 41 LIVE (en)&quot;
+
+
+git clone https://pagure.io/fedora-kickstarts.git
+git clone https://pagure.io/fedora-kickstarts -b f41
+ksflatten -c fedora-live-i3.ks -o flatten-i3.ks
+
+sudo livecd-creator --verbose \
+ --config=flatten-i3.ks \
+ --fslabel=Fedora-i3-live \
+ --title=Fedora-i3-Spin \
+ --releasever=41 --cache=./cache/live 
+</code></pre>
+<h2 id="centos-baserepo">CentOS-Base.repo</h2>
+<pre><code>[os]
+name=Qcloud centos os - $basearch
+baseurl=http://mirrors.cloud.tencent.com/centos/$releasever/os/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=http://mirrors.cloud.tencent.com/centos/RPM-GPG-KEY-CentOS-7
+
+[updates]
+name=Qcloud centos updates - $basearch
+baseurl=http://mirrors.cloud.tencent.com/centos/$releasever/updates/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=http://mirrors.cloud.tencent.com/centos/RPM-GPG-KEY-CentOS-7
+
+[centosplus]
+name=Qcloud centosplus - $basearch
+baseurl=http://mirrors.cloud.tencent.com/centos/$releasever/centosplus/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=http://mirrors.cloud.tencent.com/centos/RPM-GPG-KEY-CentOS-7
+
+[cr]
+name=Qcloud centos cr - $basearch
+baseurl=http://mirrors.cloud.tencent.com/centos/$releasever/cr/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=http://mirrors.cloud.tencent.com/centos/RPM-GPG-KEY-CentOS-7
+
+[extras]
+name=Qcloud centos extras - $basearch
+baseurl=http://mirrors.cloud.tencent.com/centos/$releasever/extras/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=http://mirrors.cloud.tencent.com/centos/RPM-GPG-KEY-CentOS-7
+
+[fasttrack]
+name=Qcloud centos fasttrack - $basearch
+baseurl=http://mirrors.cloud.tencent.com/centos/$releasever/fasttrack/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=http://mirrors.cloud.tencent.com/centos/RPM-GPG-KEY-CentOS-7
+
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>

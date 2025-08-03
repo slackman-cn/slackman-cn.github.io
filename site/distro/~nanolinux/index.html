@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="../centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="../ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../script/cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="../../script/gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="../../script/lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../setup/01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../ubuntu/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../~tinylinux/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#tmpfs" class="nav-link">TMPFS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#kernel" class="nav-link">Kernel</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#toolchain" class="nav-link">toolchain</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#makepkg" class="nav-link">makepkg</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nl-toolchain" class="nav-link">NL Toolchain</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nl-rootfs" class="nav-link">NL rootfs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nl-source" class="nav-link">NL source</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nl-disk" class="nav-link">NL disk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nl-rootfs_1" class="nav-link">NL rootfs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#about-links" class="nav-link">About Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>FROM:  NanoPi R5S,  GNU nano editor, iPod nano </p>
+<h2 id="tmpfs">TMPFS</h2>
+<pre><code>mkdir /root/build
+mount -t tmpfs tmpfs /root/build -o size=6G,nr_inodes=10000000
+</code></pre>
+<h2 id="kernel">Kernel</h2>
+<p><a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.165.tar.xz">https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.165.tar.xz</a></p>
+<pre><code>// sudo apt build-dep linux-image-amd64
+
+sudo apt install bc binutils bison dwarves flex gcc git \
+     gnupg2 gzip libelf-dev libncurses5-dev libssl-dev \
+    make openssl pahole perl-base rsync tar xz-utils
+
+$ make defconfig
+$ make menuconfig
+$ make -j8
+
+编译结果 arch/x86/boot/bzImage
+Linux kernel x86 boot executable bzImage, version 5.15.165 (root@4b44b9573558) #1 SMP Mon Apr 28 15:56:47 CST 2025
+, RO-rootFS, swap_dev 0XA, Normal VGA
+</code></pre>
+<h2 id="toolchain">toolchain</h2>
+<p>https://crosstool-ng.github.io/docs/toolchain-construction/</p>
+<p>https://chschneider.eu/linux/tfs/</p>
+<h2 id="makepkg">makepkg</h2>
+<p>slackware &amp;&amp; openwrt/toolchain</p>
+<pre><code>slackware64-current/source/a/pkgtools/scripts
+slackware64-current/source/d/binutils
+
+&gt; Applications
+&gt; ApplicationImages
+&gt; Frameworks
+&gt; Library {shell, desktop, openssh}  pkglist;pkgmake
+&gt; Images
+&gt; User { config; local; }
+
+引导Kernel
+运行Kernel
+
+
+proc
+sys
+dev/pts
+
+mount -t sysfs sysfs /sys
+mount -t proc proc /proc
+mount -p devtmpfs udev /dev
+
+mount -t proc /proc /mnt/rootfs/proc
+mount -t sysfs /sys /mnt/rootfs/sys
+mount -o bind /dev /mnt/rootfs/dev
+mount -o bind /dev/pts /mnt/rootfs/dev/pts
+
+etc
+var
+opt
+tmp
+
+------- Applications
+busybox
+google-chrome
+vim
+nano-editor
+qtcreator
+
+------- Frameworks  
+(/usr/local/go;  /usr/local/node)
+kernel
+java
+ruby
+node
+make -&gt; gcc toolchain
+toolchain (gnu)
+python
+lua
+</code></pre>
+<h2 id="nl-toolchain">NL Toolchain</h2>
+<p>FROM docker.io/alpine:3.11</p>
+<pre><code>======= 软件仓库
+$ less /etc/apk/repositories
+https://dl-cdn.alpinelinux.org/alpine/v3.21/main
+https://dl-cdn.alpinelinux.org/alpine/v3.21/community
+
+https://mirrors.ustc.edu.cn/alpine/v3.21/main
+https://mirrors.ustc.edu.cn/alpine/v3.21/community
+
+======= 软件
+apk list  ; all package
+apk stats ; installed package
+apk update
+apk search &lt;name&gt;
+apk add &lt;name&gt;
+apk del &lt;name&gt;
+
+apk add neovim
+alias vi='nvim'
+
+====== 设置 locale
+apk add musl-locales
+locale -a
+
+主机名
+setup-hostname liveos
+
+====== 设置 Date
+apk add -U tzdata
+ls /usr/share/zoneinfo/
+
+方式1
+setup-timezone Asia/Shanghai
+方式2
+ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+</code></pre>
+<h2 id="nl-rootfs">NL rootfs</h2>
+<p><a href="https://buildroot.org/downloads/buildroot-2025.02.tar.gz">https://buildroot.org/downloads/buildroot-2025.02.tar.gz</a></p>
+<p><a href="https://mirrors.hust.edu.cn/docs/buildroot/">https://mirrors.hust.edu.cn/docs/buildroot/</a></p>
+<pre><code>sudo apt-get install build-essential ncurses-base ncurses-bin libncurses5-dev dialog
+
+$ make menuconfig
+$ make
+下载源码 dl  ;; 也可以执行命令 make source
+编译结果 output
+
+Target options
+        -&gt; Target Architecture = ARM (little endian)
+        -&gt; Target Binary Format = ELF
+        -&gt; Target Architecture Variant = cortex-A7
+        -&gt; Target ABI = EABIhf
+        -&gt; Floating point strategy = NEON/VFPv4
+        -&gt; ARM instruction set = ARM
+
+Toolchain
+   -&gt; Toolchain type = External toolchain
+   -&gt; Toolchain = Custom toolchain //选择用户的交叉编译器
+
+System configuration
+   -&gt; System hostname = Embedfire_imx6ull //平台名字
+   -&gt; System banner = Welcome to embedfire i.mx6ull //欢迎语
+   -&gt; Init system = BusyBox //使用 busybox
+</code></pre>
+<h2 id="nl-source">NL source</h2>
+<p>wget -i wget-list</p>
+<pre><code>docker pull quay.io/slackman/openwrt-src
+
+sudo apt install gawk texinfo
+readlink -f /bin/sh
+$ sudo ln -sf bash /bin/sh
+$ sudo ln -sf dash /bin/sh
+
+git clone -b v24.10.0 git://192.168.1.1/git.openwrt.org/openwrt/openwrt.git --depth=1
+touch feeds.conf
+src-git packages git://192.168.1.1/git.openwrt.org/feed/packages.git
+
+======= Step1: 
+$ ./script/feeds/update  -a
+create dir {feeds}
+create dir {staging_dir/host/bin, tmp}
+clone  {feeds/packages}
+create {feeds/packages.index,  packages.targetindex}
+    system(&quot;ln -sf $name.tmp/.packageinfo ./feeds/$name.index&quot;);
+    system(&quot;ln -sf $name.tmp/.targetinfo ./feeds/$name.targetindex&quot;);
+
+
+======= Step2: 
+$ ./script/feeds/install -a
+create link {feeds/base -&gt; /root/openwrt/package}
+
+</code></pre>
+<h2 id="nl-disk">NL disk</h2>
+<pre><code>sudo apt install qemu-utils
+qemu-img create disk.img 20G
+
+sudo fdisk -l disk.img
+sudo fdisk disk.img
+
+---- part1
+o
+n
+p
+/
++100M
+a
+---- part2
+n
+p
+/
+/
+w
+</code></pre>
+<h2 id="nl-rootfs_1">NL rootfs</h2>
+<pre><code>mount -t proc /proc /mnt/rootfs/proc
+mount -t sysfs /sys /mnt/rootfs/sys
+mount -o bind /dev /mnt/rootfs/dev
+mount -o bind /dev/pts /mnt/rootfs/dev/pts
+
+$ chroot /mnt/rootfs
+
+umount  /mnt/rootfs/dev/pts
+umount  /mnt/rootfs/dev
+umount  /mnt/rootfs/proc
+umount  /mnt/rootfs/sys
+</code></pre>
+<p>filesystem</p>
+<pre><code>$ man interfaces
+$ man resolv.conf
+$ man hostname
+$ man hosts
+
+export LC_ALL=en_US.UTF-8
+apt-get install locales
+dpkg-reconfigure locales
+
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+echo Asia/Shanghai &gt; /etc/timezone
+
+dbus-uuidgen &gt; /etc/machine-id
+apt-get autoremove -y
+apt-get clean -y
+
+tar -cvpf /tmp/system.tar --directory=/ \
+  --exclude=proc --exclude=sys --exclude=dev --exclude=run \
+   --exclude=boot .
+
+-e &quot;var/cache/apt/archives/*&quot; \
+-e &quot;root/*&quot; \
+-e &quot;root/.*&quot; \
+-e &quot;tmp/*&quot; \
+-e &quot;tmp/.*&quot; \
+-e &quot;swapfile&quot;
+</code></pre>
+<h1 id="about-links">About Links</h1>
+<p><a href="https://classpert.com/classpertx/courses/building-a-programming-language/cohort">https://classpert.com/classpertx/courses/building-a-programming-language/cohort</a></p>
+<p><a href="https://mirrors.aliyun.com/lfs/lfs-packages/11.2">https://mirrors.aliyun.com/lfs/lfs-packages/11.2</a></p>
+<p><a href="https://tldp.org/HOWTO/From-PowerUp-To-Bash-Prompt-HOWTO.html">https://tldp.org/HOWTO/From-PowerUp-To-Bash-Prompt-HOWTO.html</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>

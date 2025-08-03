@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../distro/archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="../groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="../lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="../ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../setup/01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../cxx/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../groovy/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#gradle" class="nav-link">Gradle 脚本</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#gradle-task-plugin-dependency" class="nav-link">Gradle Task &amp; Plugin &amp; Dependency</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#gradle-init-basicapplicationlibrary" class="nav-link">Gradle init {basic,application,library}</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#task-os" class="nav-link">Task 检查OS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#task" class="nav-link">Task 依赖关系</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#task_1" class="nav-link">Task 运行命令</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#task-tar" class="nav-link">Task 打包tar</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#task_2" class="nav-link">Task 下载文件， 拷贝文件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="gradle">Gradle 脚本</h2>
+<p>https://docs.gradle.org.cn/current/userguide/logging.html</p>
+<p>https://javaguide.cn/tools/gradle/gradle-core-concepts.html#gradle-%E4%BB%BB%E5%8A%A1</p>
+<p>gradle -b logger.gradle <task></p>
+<pre><code>task log() {
+    doLast{    
+        logger.quiet('quiet 重要消息')    
+        logger.error('error 错误消息')    
+        logger.lifecycle('lifecycler 进度消息')    
+        logger.warn('warn 警告消息')    
+        logger.info('info 消息 信息')    
+        logger.debug('debug 调试信息')  
+  }
+}
+
+gradle -b logger.gradle log
+
+输出非常多DEBUG
+gradle -b logger.gradle -d log
+
+其他配置 -d 或 --debug； -i 或 --info
+gradle run --info
+
+gradle.properties 配置文件
+org.gradle.logging.level=info
+</code></pre>
+<h2 id="gradle-task-plugin-dependency">Gradle Task &amp; Plugin &amp; Dependency</h2>
+<pre><code>task hello {
+     doLast {
+       println &quot;Hello&quot;
+     }
+}
+
+tasks.register(&quot;hello&quot;) {
+    group = &quot;task basic sample&quot;
+    description = &quot;this is the first lovely task.&quot;
+    doLast {
+        println('Hello!')
+    }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
+
+tasks.register('removeInput', Delete) {
+    delete 'inputs/3.txt'
+}
+</code></pre>
+<p>脚本插件: 普通的脚本文件</p>
+<p>二进制插件: 单独的插件模块，其他模块通过 Plugin ID 应用</p>
+<pre><code>apply from: rootProject.file('buildSrc/shared.gradle')
+
+plugins {
+    id 'java'
+    id 'com.gradleup.shadow' version '8.3.4'
+}
+
+插件镜像地址 settings.gradle
+pluginManagement {
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
+        }
+        gradlePluginPortal()
+        mavenCentral()
+        jcenter()
+    }
+}
+</code></pre>
+<p>引入依赖</p>
+<pre><code>repositories {
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+    maven {
+        url 'https://maven.aliyun.com/repository/spring/'
+    }
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation &quot;junit:junit:4.13&quot;
+
+    implementation project(':shared')
+    implementation project(':api')
+
+    implementation files('libs/xxx.jar')
+    implementation(fileTree(&quot;libs&quot;));
+}
+</code></pre>
+<h2 id="gradle-init-basicapplicationlibrary">Gradle init {basic,application,library}</h2>
+<p>gradle-7.4-bin.zip</p>
+<p>amazon-corretto-17-x64-linux-jdk.tar.gz</p>
+<pre><code>&gt; mkdir myapp &amp;&amp; cd
+&gt; gradle init
+&gt; gradle build
+
+https://docs.gradle.org/current/samples/sample_building_java_applications.html
+
+&gt; gradle run
+&gt; gradle clean
+&gt; gradle test
+&gt; gradle javaToolchains
+
+&gt; gradle tasks
+&gt; gradle tasks --all
+&gt; gradle tasks --group=“build setup
+
+plugins {
+    id 'application' 
+}
+
+application {
+    mainClass = 'demo.App' 
+}
+
+覆写一个任务
+task copy(overwrite: true)
+</code></pre>
+<h2 id="task-os">Task 检查OS</h2>
+<p>https://stackoverflow.org.cn/questions/11235614</p>
+<pre><code>import org.gradle.internal.os.OperatingSystem;
+
+task preCheck {
+   description 'Run all conditional os tasks'
+   doLast {
+        println(OperatingSystem.current().isMacOsX())
+        println(OperatingSystem.current().isLinux())
+   }
+}
+
+task hello {
+    doLast {
+        println 'hello onen'
+    }
+}
+
+hello.onlyIf { !project.hasProperty('fensi') }
+</code></pre>
+<p>TinyLinux Distro</p>
+<pre><code>task build {
+   description 'Make a tiny Linux from scratch on Linux'
+   onlyIf { OperatingSystem.current().isLinux() }
+
+   doFirst {
+      println 'make toolchain; preCheck os host tools'
+   }
+   doLast {
+      println 'make rootfs;  download file  wget source'
+   }
+
+}
+</code></pre>
+<h2 id="task">Task 依赖关系</h2>
+<p>https://docs.gradle.org/current/userguide/part2_gradle_tasks.html
+https://bbs.huaweicloud.com/blogs/418868</p>
+<pre><code>task(&quot;H&quot;) {
+  group(&quot;onenewcode&quot;) 
+  description(&quot;this is the task H&quot;)
+}
+
+task welcome {
+    group 'Sample category'
+    description 'Tasks which shows a welcome message'
+    doLast {
+        println 'Welcome in the Baeldung!'
+    }
+}
+</code></pre>
+<p>依赖关系</p>
+<pre><code>tasks.register(&quot;hello&quot;) {
+    doLast {
+        println('Hello!')
+    }
+}
+
+tasks.register(&quot;greet&quot;) {
+    doLast {
+        println('How are you?')
+    }
+    dependsOn(&quot;hello&quot;)
+}
+
+task A {
+    println &quot;配置阶段&quot; 
+    doFirst(){
+        println &quot;root taskA doFirst&quot;
+    }
+    doLast(){
+        println &quot;root taskA doLast&quot;
+    }
+}
+
+//参数方式依赖: dependsOn后面用冒号
+task 'C'(dependsOn: ['A', 'B']) {
+    doLast {
+        println &quot;TaskC..&quot;
+    }
+}
+
+//参数方式依赖
+task 'C' {
+    //内部依赖：dependsOn后面用 = 号
+    dependsOn= [A,B] 
+    doLast {
+        println &quot;TaskC..&quot;
+    }
+}
+
+// 指定多个 task 依赖
+task print(dependsOn :[second,first]) {
+ doLast {
+      logger.quiet &quot;指定多个task依赖&quot;
+    }
+}
+
+// 指定一个 task 依赖
+task third(dependsOn : print) {
+ doLast {
+      println '+++++third+++++'
+    }
+}
+</code></pre>
+<h2 id="task_1">Task 运行命令</h2>
+<p>https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Exec.html
+https://codippa.com/gradle-run-shell-script/</p>
+<pre><code>task build1(type: Exec) {
+  workingDir &quot;$projectDir/gradle&quot;
+   commandLine 'pwd'
+}
+
+task build2(type: Exec) {
+   commandLine 'sh', '-c', 'date', '-R'
+}
+
+task execScripts {
+    doLast {
+        def script1 = &quot;sh script1.sh&quot;.execute()
+        script1.waitFor()
+
+        def script2 = &quot;sh script2.sh&quot;.execute()
+        script2.waitFor()
+    }
+}
+</code></pre>
+<h2 id="task-tar">Task 打包tar</h2>
+<p>https://dev59.com/7Z3ha4cB1Zd3GeqPS1Yw
+https://docs.gradle.org.cn/current/dsl/org.gradle.api.tasks.bundling.Tar.html</p>
+<pre><code>task tgzTask(type: Tar) {
+    into('app/') {
+        from 'build/libs'
+        include '*.jar'
+    }
+    into('app/') {
+        from 'build/resources/main/banner.txt'
+    }
+    into('app/config') {
+        from 'build/resources/main/config'
+        from 'build/resources/main/banner.txt'
+    }
+    into('app/config/sql') {
+        from 'build/resources/main/sql'
+    }
+
+    destinationDirectory = file('build/distributions')
+    // 不写这两行就是tar
+    extension 'tgz'
+    compression = Compression.GZIP
+}
+</code></pre>
+<h2 id="task_2">Task 下载文件， 拷贝文件</h2>
+<p>https://michelkraemer.com/gradle-download-task-download-files-with-progress/<br />
+https://github.com/michel-kraemer/gradle-download-task<br />
+https://plugins.gradle.org/plugin/de.undercouch.download</p>
+<p>https://docs.gradle.org/current/userguide/working_with_files.html</p>
+<pre><code>最新版本 5.6.0
+plugins {
+    id &quot;de.undercouch.download&quot; version &quot;5.0.0&quot;
+}
+
+task downloadFile(type: Download) {
+    src 'http://192.168.1.1/pub/gcc-7.3.0.tar.gz'
+    dest buildDir
+}
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>

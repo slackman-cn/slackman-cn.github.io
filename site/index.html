@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="img/linux.ico">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href=".">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="distro/archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="distro/centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="distro/rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="distro/ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="distro/~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="distro/~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="distro/~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="script/cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="script/gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="script/groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="script/java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="script/java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="script/java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="script/lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="script/python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="script/python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="script/ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="script/ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="setup/01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="setup/02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="setup/03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="setup/04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="setup/05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="setup/06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="linux/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#raspberrypi-4b" class="nav-link">RaspberryPi 4B</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nanopi-r5s" class="nav-link">NanoPi R5S</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#about-links" class="nav-link">About Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="raspberrypi-4b">RaspberryPi 4B</h2>
+<p>Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.8GH</p>
+<figure>
+<img src="./img/raspberry-pi-4.jpg" width="40%" />
+<img src="./img/raspberry-pi-4.png" width="50%" />
+</figure>
+
+<p><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/">https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/</a></p>
+<pre><code>Architecture:             aarch64
+  CPU op-mode(s):         32-bit, 64-bit
+  Byte Order:             Little Endian
+CPU(s):                   4
+  On-line CPU(s) list:    0-3
+Vendor ID:                ARM
+  Model name:             Cortex-A72
+    Model:                3
+    Thread(s) per core:   1
+    Core(s) per cluster:  4
+    Socket(s):            -
+    Cluster(s):           1
+    Stepping:             r0p3
+    CPU(s) scaling MHz:   40%
+    CPU max MHz:          1500.0000
+    CPU min MHz:          600.0000
+    BogoMIPS:             108.00
+    Flags:                fp asimd evtstrm crc32 cpuid
+Caches (sum of all):      
+  L1d:                    128 KiB (4 instances)
+  L1i:                    192 KiB (4 instances)
+  L2:                     1 MiB (1 instance)
+</code></pre>
+<p>Ubuntu22,  GCC11, ldd (Ubuntu GLIBC 2.35-0ubuntu3.9) 2.35</p>
+<pre><code>                                                 MultiCore SingleCore
+Workload Name                                     (iter/s)   (iter/s)    Scaling
+----------------------------------------------- ---------- ---------- ----------
+cjpeg-rose7-preset                                  232.56      62.50       3.72
+core                                                  2.40       0.60       4.00
+linear_alg-mid-100x100-sp                           231.48      60.31       3.84
+loops-all-mid-10k-sp                                  3.97       2.10       1.89
+nnet_test                                            10.01       3.02       3.31
+parser-125k                                           8.62       9.17       0.94
+radix2-big-64k                                       94.93     216.17       0.44
+sha-test                                            384.62     109.89       3.50
+zip-test                                            129.03      38.46       3.35
+
+MARK RESULTS TABLE
+
+Mark Name                                        MultiCore SingleCore    Scaling
+----------------------------------------------- ---------- ---------- ----------
+CoreMark-PRO                                       4486.36    1958.70       2.29
+</code></pre>
+<h2 id="nanopi-r5s">NanoPi R5S</h2>
+<p>Rockchip RK3568B2, Quad-core ARM Cortex-A55 CPU, up to 2.0GHz</p>
+<figure>
+<img src="./img/R5SC-01.jpg" width="25%" />
+<img src="./img/NanoPi_R5S-01B.jpg" width="30%" />
+<img src="./img/NanoPi_R5S_Layout.jpg" width="40%" />
+</figure>
+
+<p><a href="https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R5S/zh">https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R5S/zh</a></p>
+<pre><code>Architecture:             aarch64
+  CPU op-mode(s):         32-bit, 64-bit
+  Byte Order:             Little Endian
+CPU(s):                   4
+  On-line CPU(s) list:    0-3
+Vendor ID:                ARM
+  Model name:             Cortex-A55
+    Model:                0
+    Thread(s) per core:   1
+    Core(s) per cluster:  4
+    Socket(s):            -
+    Cluster(s):           1
+    Stepping:             r2p0
+    CPU(s) scaling MHz:   71%
+    CPU max MHz:          1992.0000
+    CPU min MHz:          408.0000
+    BogoMIPS:             48.00
+    Flags:                fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+Caches (sum of all):      
+  L1d:                    128 KiB (4 instances)
+  L1i:                    128 KiB (4 instances)
+  L2:                     512 KiB (1 instance)
+</code></pre>
+<p>Ubuntu22,  GCC11, ldd (Ubuntu GLIBC 2.35-0ubuntu3.9) 2.35</p>
+<pre><code>                                                 MultiCore SingleCore
+Workload Name                                     (iter/s)   (iter/s)    Scaling
+----------------------------------------------- ---------- ---------- ----------
+cjpeg-rose7-preset                                  222.22      61.35       3.62
+core                                                  1.97       0.50       3.94
+linear_alg-mid-100x100-sp                           100.20      26.34       3.80
+loops-all-mid-10k-sp                                  2.50       0.99       2.53
+nnet_test                                             6.15       1.86       3.31
+parser-125k                                          13.29       8.93       1.49
+radix2-big-64k                                       91.26      71.52       1.28
+sha-test                                            333.33     106.38       3.13
+zip-test                                            102.56      29.41       3.49
+
+MARK RESULTS TABLE
+
+Mark Name                                        MultiCore SingleCore    Scaling
+----------------------------------------------- ---------- ---------- ----------
+CoreMark-PRO                                       3588.78    1298.55       2.76
+</code></pre>
+<p><img alt="RK3658" src="img/rk3568.jpeg" /></p>
+<h1 id="about-links">About Links</h1>
+<p><a href="https://www.microcenter.com/product/637834/raspberry-pi-4-model-b">https://www.microcenter.com/product/637834/raspberry-pi-4-model-b</a></p>
+<p><a href="https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R5S">https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R5S</a></p>
+<p><a href="https://www.wikihow.com/Main-Page">https://www.wikihow.com/Main-Page</a></p>
+<p><strong>ISA</strong></p>
+<p><a href="https://zh.wikipedia.org/wiki/X86">https://zh.wikipedia.org/wiki/X86</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/ARM架构">https://zh.wikipedia.org/wiki/ARM架构</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/MIPS架构">https://zh.wikipedia.org/wiki/MIPS架构</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/RISC-V">https://zh.wikipedia.org/wiki/RISC-V</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/LoongArch">https://zh.wikipedia.org/wiki/LoongArch</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/LoongISA">https://zh.wikipedia.org/wiki/LoongISA</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/base.js"></script>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-08-03 05:22:36.715371+00:00
+-->

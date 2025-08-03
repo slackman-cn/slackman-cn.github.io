@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../distro/archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="../gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="../groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="../lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../setup/01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../ruby/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../setup/01-base/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#install" class="nav-link">Install</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#install-source" class="nav-link">Install (Source)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#sqlite" class="nav-link">示例 SQLite</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#mysql" class="nav-link">示例 MySQL</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="install">Install</h2>
+<p>https://www.ruby-lang.org/zh_cn/</p>
+<pre><code>sudo apt install ruby ruby-dev ruby-bundler
+
+root@ubuntu22:~# ruby --version
+ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux-gnu]
+
+root@ubuntu22:~# bundler --version
+Bundler version 2.3.5
+
+===== 默认源
+root@ubuntu22:~/ruby# gem sources
+*** CURRENT SOURCES ***
+
+https://rubygems.org/
+
+===== 国内源
+gem sources --remove https://rubygems.org/
+gem sources -a https://mirrors.aliyun.com/rubygems/
+</code></pre>
+<h2 id="install-source">Install (Source)</h2>
+<p>https://docs.ruby-lang.org/en/master/contributing/building_ruby_md.html</p>
+<pre><code>======= 编译环境
+sudo apt install autoconf patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev uuid-dev
+或者 sudo apt build-dep ruby
+
+======= 源码
+git clone https://github.com/ruby/ruby.git  -b v3_3_7
+git clone http://192.168.22.239/github.com/ruby.git  -b v3_3_7 --depth=1
+
+./autogen.sh
+./configure --prefix=/opt/ruby-3   # 默认应该也是shared, 后面两个不确定
+./configure --prefix=/opt/ruby-3 --enable-shared --with-ext=openssl,psych,+
+make 
+make install
+
+root@ubuntu22:~/ruby# export PATH=/opt/ruby-3/bin:$PATH
+root@ubuntu22:~/ruby# ruby --version
+ruby 3.3.7 (2025-01-15 revision be31f993d7) [x86_64-linux]
+root@ubuntu22:~/ruby# bundle --version
+Bundler version 2.5.22
+</code></pre>
+<h2 id="sqlite">示例 SQLite</h2>
+<p>sudo apt install sqlite3</p>
+<pre><code>sqlite3 test.db  # 创建数据库
+&gt; .tables        # 所有表
+&gt; CREATE TABLE Testing(Id INTEGER);  
+&gt; .schema Testing   # 表定义
+&gt; .exit
+
+SQL格式
+CREATE TABLE [IF NOT EXISTS] [schema_name].table_name (
+    column_1 data_type PRIMARY KEY,
+    column_2 data_type NOT NULL,
+    column_3 data_type DEFAULT 0,
+    table_constraints
+) [WITHOUT ROWID];
+</code></pre>
+<p>gem install sqlite3</p>
+<pre><code>require 'sqlite3'
+
+begin
+
+    db = SQLite3::Database.open &quot;test.db&quot;
+    db.execute &quot;CREATE TABLE IF NOT EXISTS Cars(Id INTEGER PRIMARY KEY, 
+        Name TEXT, Price INT)&quot;
+    db.execute &quot;INSERT INTO Cars VALUES(1,'Audi',52642)&quot;
+    db.execute &quot;INSERT INTO Cars VALUES(2,'Mercedes',57127)&quot;
+    db.execute &quot;INSERT INTO Cars VALUES(3,'Skoda',9000)&quot;
+
+rescue SQLite3::Exception =&gt; e 
+
+    puts &quot;Exception occurred&quot;
+    puts e
+
+ensure
+    db.close if db
+end
+</code></pre>
+<pre><code>require 'sqlite3'
+
+begin
+    db = SQLite3::Database.open &quot;test.db&quot;
+
+    stm = db.prepare &quot;SELECT * FROM Cars LIMIT 5&quot; 
+    rs = stm.execute 
+
+    rs.each do |row|
+        puts row.join &quot;\s&quot;
+    end
+
+rescue SQLite3::Exception =&gt; e 
+    puts &quot;Exception occurred&quot;
+    puts e
+
+ensure
+    stm.close if stm
+    db.close if db
+end
+</code></pre>
+<h2 id="mysql">示例 MySQL</h2>
+<p>gem install mysql2</p>
+<pre><code>需要安装系统库
+sudo apt-get install libmysqlclient-dev
+
+root@ubuntu22:~# gem install mysql2
+Fetching mysql2-0.5.6.gem
+Building native extensions. This could take a while...
+Successfully installed mysql2-0.5.6
+
+gem install mysql2 -v &quot;0.5.3&quot;
+gem install mysql2 -v 0.5.6 -- --with-ldflags=-L$(brew --prefix zstd)/lib
+</code></pre>
+<p>查找数据</p>
+<pre><code>require 'mysql2'  
+
+client = Mysql2::Client.new(  
+  host: &quot;localhost&quot;,  
+  username: &quot;your_username&quot;,  
+  password: &quot;your_password&quot;,  
+  database: &quot;your_database&quot;  
+)  
+
+begin  
+  # 执行数据库操作  
+  results = client.query(&quot;SELECT * FROM your_table&quot;)  
+  results.each do |row|  
+    puts row.inspect  
+  end  
+rescue Mysql2::Error =&gt; e  
+  puts e.message  
+ensure  
+  client.close if client  
+end  
+</code></pre>
+<p>连接池</p>
+<pre><code>   pool = Mysql2::Client::ConnectionPool.new(size: 10)  
+   pool.with do |client|  
+     results = client.query(&quot;SELECT * FROM your_table&quot;)  
+     # 处理结果  
+   end  
+
+防注入
+client.query(&quot;SELECT * FROM your_table WHERE id = ?&quot;, [user_input])  
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>

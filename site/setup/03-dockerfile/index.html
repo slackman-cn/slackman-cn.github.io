@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../distro/archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../script/cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="../../script/gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/groovy/" class="dropdown-item">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="../../script/lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../../script/python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="../../script/ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="../02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../02-base-devel/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../04-buildah/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#dockerio-docker-ce" class="nav-link">docker.io 和 docker-ce</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#docker-buildx" class="nav-link">Docker buildx</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#github-actions" class="nav-link">Github Actions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#anolis-rootfs" class="nav-link">Anolis rootfs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#ubuntu-rootfs" class="nav-link">Ubuntu rootfs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#from-ubuntu" class="nav-link">FROM Ubuntu</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#from-fedora" class="nav-link">FROM Fedora</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#from-alpine" class="nav-link">FROM Alpine</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#about-links" class="nav-link">About Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Container 运行操作系统的用户模式部分（不包括内核）</p>
+<p><img alt="LICENSE" src="../../img/container-diagram.svg" /></p>
+<p>Virtual Machine 运行的是完整的操作系统（包括内核），因此需要更多的系统资源（CPU、内存和存储）</p>
+<p><img alt="LICENSE" src="../../img/virtual-machine-diagram.svg" /></p>
+<h2 id="dockerio-docker-ce">docker.io 和 docker-ce</h2>
+<p>Docker.io 是由Debian团队维护的Docker版本，</p>
+<p>Docker CE（Docker Community Edition）是Docker官方维护的版本, 需要添加仓库，添加GPG密钥</p>
+<pre><code>apt-get install --no-install-recommends --yes --force-yes apparmor docker.io wget
+
+systemctl start apparmor
+systemctl stop docker.service
+systemctl stop docker.socket
+systemctl start docker
+
+docker pull busybox:latest
+</code></pre>
+<h2 id="docker-buildx">Docker buildx</h2>
+<p>19.03+ 版本开始可以使用 docker buildx build 命令利用 BuildKit 构建镜像</p>
+<pre><code># build x64
+docker build -t ubuntu .
+
+# crossbuild arm64
+docker buildx build --platform linux/arm64 -t ubuntu-arm64 .
+
+
+yum install docker-buildx
+sudo systemctl start docker
+sudo usermod -aG docker $USER
+
+$ sudo docker version
+Client:
+ Version:           27.3.1
+
+$ docker buildx version
+github.com/docker/buildx 0.17.1 1.fc41
+
+$ sudo docker buildx ls
+NAME/NODE     DRIVER/ENDPOINT   STATUS    BUILDKIT   PLATFORMS
+default*      docker                                 
+ \_ default    \_ default       running   v0.16.0    linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/arm64, linux/riscv64, linux/ppc64, linux/ppc64le, linux/s390x, linux/386, linux/mips64le, linux/mips64, linux/loong64, linux/arm/v7, linux/arm/v6
+</code></pre>
+<h2 id="github-actions">Github Actions</h2>
+<pre><code>## 其他默认，只修改jobs部分
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Login to Quay.io
+        uses: docker/login-action@v3
+        with:
+          registry: quay.io
+          username: ${{ secrets.QUAY_USERNAME }}
+          password: ${{ secrets.QUAY_PASSWORD }}
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: quay.io/slackman/osarch:latest,quay.io/slackman/osarch:${{ github.ref_name }}
+          outputs: type=image,name=target
+</code></pre>
+<h2 id="anolis-rootfs">Anolis rootfs</h2>
+<pre><code>FROM scratch
+LABEL \
+    org.opencontainers.image.title=&quot;Anolis OS Base Image&quot; \
+    org.opencontainers.image.vendor=&quot;Anolis OS 8.9&quot; \
+    org.opencontainers.image.licenses=&quot;Mulan PSL v2&quot; \
+    org.opencontainers.image.created=&quot;2024-04-25&quot; \
+    maintainer=&quot;OpenAnolis Cloud Native SIG&quot;
+
+ADD AnolisOS8.9-base-amd64-20240425.tar.xz  /
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &amp;&amp; echo Asia/Shanghai &gt; /etc/timezone
+ENV TZ=Asia/Shanghai
+
+CMD [&quot;/bin/bash&quot;]
+</code></pre>
+<h2 id="ubuntu-rootfs">Ubuntu rootfs</h2>
+<p>http://cdimage.ubuntu.com/ubuntu-base/releases/22.04/release/</p>
+<pre><code>FROM scratch
+LABEL \
+    org.opencontainers.image.title=&quot;Ubuntu 22.04 LTS (Jammy Jellyfish)&quot; \
+    org.opencontainers.image.release=&quot;jammy&quot; \
+    org.opencontainers.image.architecture=&quot;amd64&quot; \
+    org.opencontainers.image.variant=&quot;default&quot; \
+    org.opencontainers.image.created=&quot;20250320&quot; \
+    maintainer=&quot;localhost&quot;
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    TZ=Asia/Shanghai \
+    LANG=en_US.UTF8 \
+    LC_ALL=en_US.UTF8 \
+    LANGUAGE=enUS:en
+
+ADD ubuntu-base-22.04-base-amd64.tar.gz /
+ADD sources.list /etc/apt/sources.list
+
+RUN apt-get update &amp;&amp; apt-get install -y --no-install-recommends tzdata language-pack-en \
+    &amp;&amp; ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
+    &amp;&amp; echo $TZ &gt; /etc/timezone \
+    &amp;&amp; dpkg-reconfigure -f noninteractive tzdata
+
+RUN apt-get update &amp;&amp; apt-get install -y \
+    build-essential less wget curl file \
+    &amp;&amp; apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*
+
+
+CMD [&quot;/bin/bash&quot;]
+</code></pre>
+<p>sources.list</p>
+<pre><code>deb http://192.168.1.99:8081/repository/ubuntu/ jammy main restricted universe multiverse
+deb http://192.168.1.99:8081/repository/ubuntu/ jammy-security main restricted universe multiverse
+deb http://192.168.1.99:8081/repository/ubuntu/ jammy-updates main restricted universe multiverse
+</code></pre>
+<p>linux/amd64</p>
+<pre><code>FROM scratch
+LABEL \
+    org.opencontainers.image.title=&quot;Ubuntu 22.04 LTS (Jammy Jellyfish)&quot; \
+    org.opencontainers.image.release=&quot;jammy&quot; \
+    org.opencontainers.image.architecture=&quot;amd64&quot; \
+    org.opencontainers.image.variant=&quot;default&quot; \
+    org.opencontainers.image.created=&quot;20250320&quot; \
+    maintainer=&quot;localhost&quot;
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+ADD ubuntu-base-22.04-base-amd64.tar.gz /
+RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list; \
+    sed -i s@/security.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list; \
+    apt-get -q update; \
+    apt-get install -qy --no-install-recommends ca-certificates curl tzdata libssl-dev zlib1g-dev; \
+    ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
+    echo &quot;Asia/Shanghai&quot; &gt; /etc/timezone; \
+    rm -rf /var/lib/apt/lists/*
+
+CMD [&quot;/bin/bash&quot;]
+</code></pre>
+<p>linux/arm64</p>
+<pre><code>FROM scratch
+LABEL \
+    org.opencontainers.image.title=&quot;Ubuntu 22.04 LTS (Jammy Jellyfish)&quot; \
+    org.opencontainers.image.release=&quot;jammy&quot; \
+    org.opencontainers.image.architecture=&quot;arm64&quot; \
+    org.opencontainers.image.variant=&quot;default&quot; \
+    org.opencontainers.image.created=&quot;20250320&quot; \
+    maintainer=&quot;localhost&quot;
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+ADD ubuntu-base-22.04-base-arm64.tar.gz /
+RUN sed -i s@/ports.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list; \
+    apt-get -q update; \
+    apt-get install -qy --no-install-recommends ca-certificates curl tzdata libssl-dev zlib1g-dev; \
+    ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
+    echo &quot;Asia/Shanghai&quot; &gt; /etc/timezone; \
+    rm -rf /var/lib/apt/lists/*
+
+CMD [&quot;/bin/bash&quot;]
+</code></pre>
+<h2 id="from-ubuntu">FROM Ubuntu</h2>
+<pre><code>FROM ubuntu:22.04
+LABEL \
+    org.opencontainers.image.title=&quot;OpenNebula 6.10&quot; \
+    org.opencontainers.image.vendor=&quot;Ubuntu22 build system&quot; \
+    org.opencontainers.image.licenses=&quot;Apache&quot; \
+    org.opencontainers.image.created=&quot;2025-04-09&quot; \
+    maintainer=&quot;localhost&quot;
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    TZ=Asia/Shanghai \
+    LANG=en_US.UTF8 \
+    LC_ALL=en_US.UTF8 \
+    LANGUAGE=enUS:en
+
+ADD sources.list /etc/apt/sources.list
+RUN apt-get update &amp;&amp; apt-get install -y --no-install-recommends tzdata \
+    &amp;&amp; ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
+    &amp;&amp; echo $TZ &gt; /etc/timezone \
+    &amp;&amp; dpkg-reconfigure -f noninteractive tzdata 
+
+# Install build base
+RUN apt-get install --no-install-recommends --yes \
+    language-pack-en build-essential vim less git wget curl \
+    &amp;&amp; apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*
+
+CMD [&quot;/bin/bash&quot;]
+</code></pre>
+<pre><code>FROM ubuntu:22.04
+LABEL \
+    org.opencontainers.image.title=&quot;OpenNebula 6.10&quot; \
+    org.opencontainers.image.vendor=&quot;Ubuntu22 build system&quot; \
+    org.opencontainers.image.licenses=&quot;Apache&quot; \
+    org.opencontainers.image.created=&quot;2025-04-09&quot; \
+    maintainer=&quot;localhost&quot;
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    TZ=Asia/Shanghai \
+    LANG=en_US.UTF8 \
+    LC_ALL=en_US.UTF8 \
+    LANGUAGE=enUS:en
+
+ADD sources.list /etc/apt/sources.list
+RUN apt-get update &amp;&amp; apt-get install -y --no-install-recommends tzdata \
+    &amp;&amp; ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
+    &amp;&amp; echo $TZ &gt; /etc/timezone \
+    &amp;&amp; dpkg-reconfigure -f noninteractive tzdata 
+
+# Install build base
+RUN apt-get install -y language-pack-en \
+    build-essential less wget curl file vim \
+    bc binutils bison dwarves flex gcc git gnupg2 gzip \
+    libelf-dev libncurses5-dev libssl-dev make openssl pahole perl-base rsync tar xz-utils \
+    &amp;&amp; apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*
+
+CMD [&quot;/bin/bash&quot;]
+</code></pre>
+<h2 id="from-fedora">FROM Fedora</h2>
+<pre><code>FROM quay.io/fedora/fedora:41
+LABEL \
+    org.opencontainers.image.title=&quot;Fedora OS 41&quot; \
+    org.opencontainers.image.release=&quot;fc41&quot; \
+    org.opencontainers.image.architecture=&quot;amd64&quot; \
+    org.opencontainers.image.variant=&quot;default&quot; \
+    org.opencontainers.image.created=&quot;20250320&quot; \
+    maintainer=&quot;localhost&quot;
+
+ENV TZ=Asia/Shanghai \
+    LANG=en_US.UTF8 \
+    LC_ALL=en_US.UTF8 \
+    LANGUAGE=enUS:en
+
+# base
+ADD http://mirrors.aliyun.com/repo/fedora.repo /etc/yum.repos.d/aliyun.repo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
+    &amp;&amp; echo $TZ &gt; /etc/timezone \
+    &amp;&amp; find /etc/yum.repos.d -name &quot;fedora*&quot; | sed -e 'p;s/repo$/repo.disable/' | xargs -n2 mv \
+    &amp;&amp; yum install -y glibc-langpack-zh glibc-langpack-en
+
+
+# base-devel
+RUN dnf install @development-tools cmake ninja-build clang -y \
+    &amp;&amp; yum install less wget curl file -y \
+    &amp;&amp; yum clean all &amp;&amp; rm -rf /var/cache/yum/*
+
+CMD [&quot;/bin/bash&quot;]
+</code></pre>
+<h2 id="from-alpine">FROM Alpine</h2>
+<pre><code>FROM docker.io/alpine:3.11
+
+LABEL \
+    org.opencontainers.image.title=&quot;OpenWrt External ToolChain&quot; \
+    org.opencontainers.image.vendor=&quot;Alpine build system&quot; \
+    org.opencontainers.image.licenses=&quot;Apache&quot; \
+    org.opencontainers.image.created=&quot;2025-04-09&quot; \
+    maintainer=&quot;localhost&quot;
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    TZ=Asia/Shanghai \
+    LANG=en_US.UTF8 \
+    LC_ALL=en_US.UTF8 \
+    LANGUAGE=enUS:en
+
+ADD repositories /etc/apk/repositories
+#RUN apk update &amp;&amp; apk add  musl-locales tzdata \
+#    &amp;&amp; ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
+#    &amp;&amp; echo $TZ &gt; /etc/timezone \
+#    &amp;&amp; apk --no-cache add build-base cmake clang clang-dev make gcc g++ libc-dev linux-headers
+RUN apk update &amp;&amp; apk add  musl-locales tzdata \
+    &amp;&amp; ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
+    &amp;&amp; echo $TZ &gt; /etc/timezone \
+    &amp;&amp; apk add build-base
+
+RUN apk add argp-standalone asciidoc bash bc binutils bzip2 cdrkit coreutils \
+  diffutils elfutils-dev findutils flex musl-fts-dev g++ gawk gcc gettext git \
+  grep gzip intltool libxslt linux-headers make musl-libintl musl-obstack-dev \
+  ncurses-dev openssl-dev patch perl python3-dev rsync tar \
+  unzip util-linux wget zlib-dev
+
+CMD [&quot;/bin/ash&quot;]
+</code></pre>
+<p>repositories</p>
+<pre><code>https://mirrors.ustc.edu.cn/alpine/v3.21/main
+https://mirrors.ustc.edu.cn/alpine/v3.21/community
+</code></pre>
+<h1 id="about-links">About Links</h1>
+<p>https://www.cnblogs.com/dazhoushuoceshi/p/7066041.html</p>
+<p>https://docs.docker.net.cn/build/buildkit/</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>

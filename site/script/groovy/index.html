@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+        <link rel="shortcut icon" href="../../img/linux.ico">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="../..">SLACKMAN.CN</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../linux/" class="nav-link">Linux</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Distro</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../distro/archlinux/" class="dropdown-item">ArchLinux from Scratch</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/centos/" class="dropdown-item">CentOS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/rootfs/" class="dropdown-item">RootFS</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~nanolinux/" class="dropdown-item">NanoLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~tinylinux/" class="dropdown-item">TinyLinux</a>
+</li>
+                                    
+<li>
+    <a href="../../distro/~toolchain/" class="dropdown-item">Toolchain</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Howto</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../howto/artifact/" class="dropdown-item">制品库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/docs/" class="dropdown-item">文档库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/git/" class="dropdown-item">代码库</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-ninja/" class="dropdown-item">构建工具 ninja</a>
+</li>
+                                    
+<li>
+    <a href="../../howto/make-scons/" class="dropdown-item">构建工具 scons</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Ustb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../howto/ustb/" class="dropdown-item">USTB</a>
+</li>
+            
+<li>
+    <a href="../../howto/ustb/vt/" class="dropdown-item">VT</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Script</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../cxx/" class="dropdown-item">C,C++</a>
+</li>
+                                    
+<li>
+    <a href="../gradle/" class="dropdown-item">Gradle Script</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Groovy Script</a>
+</li>
+                                    
+<li>
+    <a href="../java/" class="dropdown-item">JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../java_lib/" class="dropdown-item">JAVA Lib</a>
+</li>
+                                    
+<li>
+    <a href="../java_native_access/" class="dropdown-item">JAVA Native Access</a>
+</li>
+                                    
+<li>
+    <a href="../lua/" class="dropdown-item">Lua</a>
+</li>
+                                    
+<li>
+    <a href="../python/" class="dropdown-item">Python</a>
+</li>
+                                    
+<li>
+    <a href="../python_lib/" class="dropdown-item">Python Lib</a>
+</li>
+                                    
+<li>
+    <a href="../ruby/" class="dropdown-item">Ruby</a>
+</li>
+                                    
+<li>
+    <a href="../ruby_lib/" class="dropdown-item">Ruby Lib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Setup</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../setup/01-base/" class="dropdown-item">系统设置</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/02-base-devel/" class="dropdown-item">系统开发环境</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/03-dockerfile/" class="dropdown-item">Dockerfile</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/04-buildah/" class="dropdown-item">Buildah</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/05-bootcd/" class="dropdown-item">BootCD</a>
+</li>
+                                    
+<li>
+    <a href="../../setup/06-diskimage/" class="dropdown-item">DiskImage</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../gradle/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../java/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                  <i class="fa-brands fa-github"></i> 
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#install" class="nav-link">Install</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#project-gradle-812" class="nav-link">新建 project (Gradle 8.12)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#swingbuilder" class="nav-link">SwingBuilder</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#swingbuilder_1" class="nav-link">SwingBuilder 链接</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#java-swing" class="nav-link">Java Swing 绘制组件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#4-library" class="nav-link">算法4 Library</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="install">Install</h2>
+<blockquote>
+<p>apache-groovy-binary-3.0.22.zip</p>
+</blockquote>
+<p>GROOVY_HOME, PATH</p>
+<pre><code>$&gt; bin/groovy -version
+Groovy Version: 3.0.22 JVM: 17.0.12 Vendor: Amazon.com Inc. OS: Linux
+
+
+创建一个交互式 Groovy shell，您可以在其中键入 Groovy 语句
+groovysh
+
+
+运行 Swing 交互式控制台 (groovy-console-4.0.27.jar)
+groovyConsole
+
+. &quot;$DIRNAME/startGroovy&quot;
+export JAVA_OPTS=&quot;-Dsun.awt.keepWorkingSetOnMinimize=true $JAVA_OPTS&quot;
+startGroovy groovy.console.ui.Console &quot;$@&quot;
+
+运行特定的 Groovy 脚本
+groovy SomeScript
+groovyc MyClass.groovy  // MyClass.class
+</code></pre>
+<blockquote>
+<p>apache-groovy-src-4.0.27.zip (Gradle 8.12)</p>
+</blockquote>
+<p>https://github.com/apache/groovy</p>
+<p>https://services.gradle.org/distributions/</p>
+<pre><code>JDK 16+
+
+不是必要
+gradle -p bootstrap
+gradlew clean dist
+
+
+gradle tasks
+gradle build -x test  报错
+gradle dist -x test   成功
+</code></pre>
+<h2 id="project-gradle-812">新建 project (Gradle 8.12)</h2>
+<p>https://docs.gradle.org/current/samples/sample_building_groovy_applications.html</p>
+<blockquote>
+<p>gradle tasks</p>
+</blockquote>
+<pre><code>$&gt; gradle init
+
+Select type of build to generate:
+  1: Application
+  2: Library
+  3: Gradle plugin
+  4: Basic (build structure only)
+Enter selection (default: Application) [1..4] 1
+
+Select implementation language:
+  1: Java
+  2: Kotlin
+  3: Groovy
+  4: Scala
+  5: C++
+  6: Swift
+Enter selection (default: Java) [1..6] 3
+
+Enter target Java version (min: 7, default: 21):
+
+Project name (default: demo):
+
+Select application structure:
+  1: Single application project
+  2: Application and library project
+Enter selection (default: Single application project) [1..2] 1
+
+Select build script DSL:
+  1: Kotlin
+  2: Groovy
+Enter selection (default: Kotlin) [1..2]
+</code></pre>
+<p>build.gradle</p>
+<pre><code>plugins {
+    id 'groovy' 
+    id 'application' 
+}
+
+repositories {
+    mavenCentral() 
+}
+
+dependencies {
+    implementation libs.groovy.all 
+
+    implementation libs.guava 
+
+    testImplementation libs.spock.core 
+    testImplementation libs.junit
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+application {
+    mainClass = 'demo.App' 
+}
+
+tasks.named('test') {
+    useJUnitPlatform() 
+}
+</code></pre>
+<h2 id="swingbuilder">SwingBuilder</h2>
+<p>example1</p>
+<pre><code>import groovy.swing.SwingBuilder
+
+import javax.swing.*
+import javax.swing.JFrame
+import javax.swing.WindowConstants
+import java.awt.BorderLayout
+
+static void main(String[] args) {
+    def swing = new SwingBuilder()
+
+    def buttonPanel = {
+        swing.panel(constraints : BorderLayout.SOUTH) {
+
+            button(text : 'Option A', actionPerformed : {
+                println 'Option A chosen'
+            })
+
+            button(text : 'Option B', actionPerformed : {
+                println 'Option B chosen'
+            })
+        }
+    }
+
+    def mainPanel = {
+        swing.panel(layout : new BorderLayout()) {
+            label(text : 'Which Option do you want',
+                    horizontalAlignment : JLabel.CENTER,
+                    constraints : BorderLayout.CENTER)
+            buttonPanel()
+        }
+    }
+
+    def myframe = swing.frame(
+            title : 'Tutorials Point',
+            location : [100, 100],
+            size : [400, 300],
+            defaultCloseOperation : WindowConstants.EXIT_ON_CLOSE){
+        mainPanel()
+    }
+
+    myframe.setVisible(true)
+}
+</code></pre>
+<p>example2</p>
+<pre><code>import groovy.swing.SwingBuilder
+
+import javax.swing.WindowConstants
+import java.awt.BorderLayout;
+
+static void main(String[] args) {
+    def swing = new SwingBuilder()
+
+    swing.frame(title : 'Tutorials Point',
+            location : [100, 100],
+            size : [400, 300],
+            layout: new BorderLayout(),
+            show:true,
+            defaultCloseOperation : WindowConstants.EXIT_ON_CLOSE,
+    ){
+        scrollPane(constraints: BorderLayout.CENTER) {
+            textArea()
+        }
+
+        panel(constraints: BorderLayout.SOUTH) {
+            button(text: 'Click', actionPerformed: {
+                println 'hhhh'
+            })
+        }
+
+    }
+}
+</code></pre>
+<h2 id="swingbuilder_1">SwingBuilder 链接</h2>
+<p>https://www.tutorialspoint.com/groovy/groovy_builders.htm</p>
+<p>https://wizardforcel.gitbooks.io/ibm-j-pg/content/1.html</p>
+<p>http://de.uwenku.com/question/p-yoayckhz-db.html</p>
+<p>https://code.fandom.com/wiki/Groovy.swing.SwingBuilder</p>
+<p>https://uberconf.com/blog/andres_almiray/2009/11/building_rich_swing_applications_with_groovy__part_i</p>
+<p>https://freecontent.manning.com/wp-content/uploads/groovy-swingbuilder-and-threading.pdf</p>
+<pre><code>    def customMenuBar = {
+        swing.menuBar{
+            menu(text: &quot;File&quot;, mnemonic: 'F') {
+                menuItem(text: &quot;Exit&quot;, mnemonic: 'X', actionPerformed: { dispose() })
+            }
+        }
+    }
+
+    def searchPanel = {
+        swing.panel(constraints: BorderLayout.NORTH){
+            searchField = textField(columns:15)
+            button(text:&quot;Search&quot;, actionPerformed:{ /* TODO */ } )
+        }
+    }
+
+panel(id:'main') { 
+    panel { 
+     button(name:'x', action: action(name:'add', closure:{p.add(label('new')); p.revalidate()})) 
+     button(action: action(name:'remove', closure:{p.removeAll();p.revalidate();scroll.repaint()})) 
+    } 
+
+    panel() { 
+     scrollPane(id:'scroll',preferredSize: [200,200], constraints: context.CENTER) { 
+       panel(id:'p') { 
+        checkBoxList(listData: (1..20).collect([]){&quot;Option $it&quot;} as Object[]) 
+       } 
+     } 
+   } 
+} 
+</code></pre>
+<h2 id="java-swing">Java Swing 绘制组件</h2>
+<p>https://zetcode.com/javaswing/painting/</p>
+<pre><code>import javax.swing.*;
+import java.awt.*;
+
+public class CustomPanel extends JPanel {
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g); // Ensures the panel is rendered correctly
+        g.setColor(Color.BLUE);
+        g.fillRect(20, 20, 100, 100); // Custom drawing code
+    }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300, 300);
+        frame.add(new CustomPanel());
+        frame.setVisible(true);
+    }
+}
+</code></pre>
+<h2 id="4-library">算法4 Library</h2>
+<p>https://gitee.com/ZC_86/algorithms---4th-edition.git</p>
+<p>直接复制 StdDraw.java </p>
+<pre><code>int N = 100;
+StdDraw.setXscale(0, N);
+StdDraw.setYscale(0, N * N);
+StdDraw.setPenRadius(.01);
+for (int i=1; i&lt;=N; i++) {
+    StdDraw.point(i, i);
+    StdDraw.point(i, i*i);
+    StdDraw.point(i, i*Math.log(i));
+}
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/base.js"></script>
+
+    </body>
+</html>
