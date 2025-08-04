@@ -45,23 +45,11 @@
 </li>
                                     
 <li>
-    <a href="../rootfs/" class="dropdown-item">RootFS</a>
-</li>
-                                    
-<li>
     <a href="../ubuntu/" class="dropdown-item">Ubuntu</a>
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">NanoLinux</a>
-</li>
-                                    
-<li>
-    <a href="../~tinylinux/" class="dropdown-item">TinyLinux</a>
-</li>
-                                    
-<li>
-    <a href="../~toolchain/" class="dropdown-item">Toolchain</a>
+    <a href="./" class="dropdown-item active" aria-current="page">RootFS</a>
 </li>
                                 </ul>
                             </li>
@@ -191,12 +179,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../~tinylinux/" class="nav-link">
+                                <a rel="next" href="../../howto/artifact/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/slackman-cn/www.git" class="nav-link">
+                                <a href="https://github.com/slackman-cn" class="nav-link">
                                   <i class="fa-brands fa-github"></i> 
                                 </a>
                             </li>
@@ -218,52 +206,27 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#tmpfs" class="nav-link">TMPFS</a>
+            <li class="nav-item" data-bs-level="2"><a href="#docker-rootfs" class="nav-link">Docker rootfs</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#kernel" class="nav-link">Kernel</a>
+            <li class="nav-item" data-bs-level="2"><a href="#buildroot" class="nav-link">安装 buildroot</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#toolchain" class="nav-link">toolchain</a>
+            <li class="nav-item" data-bs-level="2"><a href="#buildin-toolchain" class="nav-link">默认 Buildin toolchain (成功)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#makepkg" class="nav-link">makepkg</a>
+            <li class="nav-item" data-bs-level="2"><a href="#ubuntu-toolchain" class="nav-link">使用 Ubuntu toolchain (报错)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#nl-toolchain" class="nav-link">NL Toolchain</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="2"><a href="#nl-rootfs" class="nav-link">NL rootfs</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="2"><a href="#nl-source" class="nav-link">NL source</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="2"><a href="#nl-disk" class="nav-link">NL disk</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="2"><a href="#nl-rootfs_1" class="nav-link">NL rootfs</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#about-links" class="nav-link">About Links</a>
+            <li class="nav-item" data-bs-level="2"><a href="#3rd-toolchain" class="nav-link">使用 3rd toolchain (成功)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -272,241 +235,140 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p>FROM:  NanoPi R5S,  GNU nano editor, iPod nano </p>
-<h2 id="tmpfs">TMPFS</h2>
-<pre><code>mkdir /root/build
-mount -t tmpfs tmpfs /root/build -o size=6G,nr_inodes=10000000
+<h2 id="docker-rootfs">Docker rootfs</h2>
+<pre><code>FROM scratch
+LABEL \
+    org.opencontainers.image.title=&quot;Buildroot Base Image&quot; \
+    org.opencontainers.image.vendor=&quot;Buildroot 2025.02&quot; \
+    org.opencontainers.image.licenses=&quot;Apache&quot; \
+    org.opencontainers.image.created=&quot;2025-08-01&quot; \
+    maintainer=&quot;slackman@disroot.org&quot;
+
+ADD rootfs.tar  /
+
+CMD [&quot;/bin/sh&quot;]
 </code></pre>
-<h2 id="kernel">Kernel</h2>
-<p><a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.165.tar.xz">https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.165.tar.xz</a></p>
-<pre><code>// sudo apt build-dep linux-image-amd64
+<p>问题：还是不能运行动态库</p>
+<pre><code>docker build -t root .
+docker run -it --rm root
 
-sudo apt install bc binutils bison dwarves flex gcc git \
-     gnupg2 gzip libelf-dev libncurses5-dev libssl-dev \
-    make openssl pahole perl-base rsync tar xz-utils
-
-$ make defconfig
-$ make menuconfig
-$ make -j8
-
-编译结果 arch/x86/boot/bzImage
-Linux kernel x86 boot executable bzImage, version 5.15.165 (root@4b44b9573558) #1 SMP Mon Apr 28 15:56:47 CST 2025
-, RO-rootFS, swap_dev 0XA, Normal VGA
+ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 </code></pre>
-<h2 id="toolchain">toolchain</h2>
-<p>https://crosstool-ng.github.io/docs/toolchain-construction/</p>
-<p>https://chschneider.eu/linux/tfs/</p>
-<h2 id="makepkg">makepkg</h2>
-<p>slackware &amp;&amp; openwrt/toolchain</p>
-<pre><code>slackware64-current/source/a/pkgtools/scripts
-slackware64-current/source/d/binutils
+<h2 id="buildroot">安装 buildroot</h2>
+<pre><code>整体而言，从零制作一个工具链，对嵌入式的知识掌握还是需要深入的掌握，
+另外，工具链对整个系统代码的稳定性有着极大的影响，所以直接用自动制作的工具链，一定要经过严格的压力测试，否则容易出现各种隐患。
 
-&gt; Applications
-&gt; ApplicationImages
-&gt; Frameworks
-&gt; Library {shell, desktop, openssh}  pkglist;pkgmake
-&gt; Images
-&gt; User { config; local; }
-
-引导Kernel
-运行Kernel
-
-
-proc
-sys
-dev/pts
-
-mount -t sysfs sysfs /sys
-mount -t proc proc /proc
-mount -p devtmpfs udev /dev
-
-mount -t proc /proc /mnt/rootfs/proc
-mount -t sysfs /sys /mnt/rootfs/sys
-mount -o bind /dev /mnt/rootfs/dev
-mount -o bind /dev/pts /mnt/rootfs/dev/pts
-
-etc
-var
-opt
-tmp
-
-------- Applications
-busybox
-google-chrome
-vim
-nano-editor
-qtcreator
-
-------- Frameworks  
-(/usr/local/go;  /usr/local/node)
-kernel
-java
-ruby
-node
-make -&gt; gcc toolchain
-toolchain (gnu)
-python
-lua
+因而，采用第三方制作好的，有专门公司维护的工具链，应该是一个更为有效的开发方式。
 </code></pre>
-<h2 id="nl-toolchain">NL Toolchain</h2>
-<p>FROM docker.io/alpine:3.11</p>
-<pre><code>======= 软件仓库
-$ less /etc/apk/repositories
-https://dl-cdn.alpinelinux.org/alpine/v3.21/main
-https://dl-cdn.alpinelinux.org/alpine/v3.21/community
+<p>参考 Dockerfile</p>
+<pre><code>ENV DEBIAN_FRONTEND=noninteractive \
+    FORCE_UNSAFE_CONFIGURE=1 \
+    TZ=Asia/Shanghai \
+    SDK=buildroot-2025.02
 
-https://mirrors.ustc.edu.cn/alpine/v3.21/main
-https://mirrors.ustc.edu.cn/alpine/v3.21/community
+RUN apt-get update &amp;&amp; apt-get install -y --no-install-recommends tzdata language-pack-en \
+    &amp;&amp; ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
+    &amp;&amp; echo $TZ &gt; /etc/timezone \
+    &amp;&amp; dpkg-reconfigure -f noninteractive tzdata
 
-======= 软件
-apk list  ; all package
-apk stats ; installed package
-apk update
-apk search &lt;name&gt;
-apk add &lt;name&gt;
-apk del &lt;name&gt;
+# Install base-devel
+RUN apt-get install -y \
+    build-essential less wget curl file \
+    vim git zip unzip rsync cpio bc \
+    dialog ncurses-base ncurses-bin libncurses5-dev \
+    &amp;&amp; apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*
 
-apk add neovim
-alias vi='nvim'
+ARG CHECKSUM=f9444c2e3054e0b3d0f555ab8130520bd08cdb95196233672b52b9569d14c97f 
 
-====== 设置 locale
-apk add musl-locales
-locale -a
+WORKDIR /build
+ADD --checksum=sha256:${CHECKSUM} https://buildroot.org/downloads/${SDK}.tar.gz .
 
-主机名
-setup-hostname liveos
-
-====== 设置 Date
-apk add -U tzdata
-ls /usr/share/zoneinfo/
-
-方式1
-setup-timezone Asia/Shanghai
-方式2
-ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-
+RUN tar -xf ${SDK}.tar.gz &amp;&amp; cd ${SDK} \
+    &amp;&amp; make defconfig \
+    &amp;&amp; make source
 </code></pre>
-<h2 id="nl-rootfs">NL rootfs</h2>
-<p><a href="https://buildroot.org/downloads/buildroot-2025.02.tar.gz">https://buildroot.org/downloads/buildroot-2025.02.tar.gz</a></p>
-<p><a href="https://mirrors.hust.edu.cn/docs/buildroot/">https://mirrors.hust.edu.cn/docs/buildroot/</a></p>
-<pre><code>sudo apt-get install build-essential ncurses-base ncurses-bin libncurses5-dev dialog
+<h2 id="buildin-toolchain">默认 Buildin toolchain (成功)</h2>
+<p>不能运行hello, 没有ldd</p>
+<pre><code>root@ubuntu22:/mnt/buildroot-2025.02# ls output/
+build  host  images  staging  target
+root@ubuntu22:/mnt/buildroot-2025.02# du -sh output/
+6.7G    output/
 
-$ make menuconfig
-$ make
-下载源码 dl  ;; 也可以执行命令 make source
-编译结果 output
+# ls -lh images/
+-rw-r--r-- 1 root root 5.1M  8月  1 15:09 rootfs.tar
 
-Target options
-        -&gt; Target Architecture = ARM (little endian)
-        -&gt; Target Binary Format = ELF
-        -&gt; Target Architecture Variant = cortex-A7
-        -&gt; Target ABI = EABIhf
-        -&gt; Floating point strategy = NEON/VFPv4
-        -&gt; ARM instruction set = ARM
+# target/bin  target/sbin
+usr/bin
+usr/sbin
+都是busybox链接
 
-Toolchain
-   -&gt; Toolchain type = External toolchain
-   -&gt; Toolchain = Custom toolchain //选择用户的交叉编译器
 
-System configuration
-   -&gt; System hostname = Embedfire_imx6ull //平台名字
-   -&gt; System banner = Welcome to embedfire i.mx6ull //欢迎语
-   -&gt; Init system = BusyBox //使用 busybox
+lib/libc.so.6
+lib/libm.so.6
+
+etc/os-release
+etc/hostname
+etc/fstab
+etc/inittab
+etc/init.d/rcS
 </code></pre>
-<h2 id="nl-source">NL source</h2>
-<p>wget -i wget-list</p>
-<pre><code>docker pull quay.io/slackman/openwrt-src
+<h2 id="ubuntu-toolchain">使用 Ubuntu toolchain (报错)</h2>
+<pre><code>External toolchain / Custom Toolchain / Pre-Install Toolchain
+x86_64-linux-gnu-gcc
+PREFIX: x86_64-linux-gnu 
+External toolchain library: glibc
 
-sudo apt install gawk texinfo
-readlink -f /bin/sh
-$ sudo ln -sf bash /bin/sh
-$ sudo ln -sf dash /bin/sh
-
-git clone -b v24.10.0 git://192.168.1.1/git.openwrt.org/openwrt/openwrt.git --depth=1
-touch feeds.conf
-src-git packages git://192.168.1.1/git.openwrt.org/feed/packages.git
-
-======= Step1: 
-$ ./script/feeds/update  -a
-create dir {feeds}
-create dir {staging_dir/host/bin, tmp}
-clone  {feeds/packages}
-create {feeds/packages.index,  packages.targetindex}
-    system(&quot;ln -sf $name.tmp/.packageinfo ./feeds/$name.index&quot;);
-    system(&quot;ln -sf $name.tmp/.targetinfo ./feeds/$name.targetindex&quot;);
-
-
-======= Step2: 
-$ ./script/feeds/install -a
-create link {feeds/base -&gt; /root/openwrt/package}
-
+gcc 11
+kernel 5.15
+enable: C++ Support
+enable: OpenMP Support
+disable: RPC
 </code></pre>
-<h2 id="nl-disk">NL disk</h2>
-<pre><code>sudo apt install qemu-utils
-qemu-img create disk.img 20G
+<h2 id="3rd-toolchain">使用 3rd toolchain (成功)</h2>
+<p>https://toolchains.bootlin.com/</p>
+<p>x86-64--musl--stable-2024.02-1.tar.bz2  不能运行hello, 没有ldd</p>
+<pre><code>toolchain path: /mnt/musl-stable
 
-sudo fdisk -l disk.img
-sudo fdisk disk.img
+x86_64-linux-gcc
+PREFIX: x86_64-linux
 
----- part1
-o
-n
-p
-/
-+100M
-a
----- part2
-n
-p
-/
-/
-w
+gcc 12  
+kernel 4.19
+enable: C++ Support
+enable: OpenMP Support
+enable: Fortran Support
 </code></pre>
-<h2 id="nl-rootfs_1">NL rootfs</h2>
-<pre><code>mount -t proc /proc /mnt/rootfs/proc
-mount -t sysfs /sys /mnt/rootfs/sys
-mount -o bind /dev /mnt/rootfs/dev
-mount -o bind /dev/pts /mnt/rootfs/dev/pts
+<p>x86-64--glibc--stable-2024.05-1.tar.xz  可以运行hello，有/usr/bin/ldd</p>
+<pre><code>toolchain path: /mnt/glibc-stable
 
-$ chroot /mnt/rootfs
+x86_64-linux-gcc
+PREFIX: x86_64-linux
 
-umount  /mnt/rootfs/dev/pts
-umount  /mnt/rootfs/dev
-umount  /mnt/rootfs/proc
-umount  /mnt/rootfs/sys
-</code></pre>
-<p>filesystem</p>
-<pre><code>$ man interfaces
-$ man resolv.conf
-$ man hostname
-$ man hosts
+gcc 13  
+kernel 4.19
+enable: C++ Support
+enable: OpenMP Support
+disable: Fortan support
 
-export LC_ALL=en_US.UTF-8
-apt-get install locales
-dpkg-reconfigure locales
+disable: RPC Support
+ERROR disable BR2_TOOLCHAIN_EXTERNAL_INET_RPC
 
-ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-echo Asia/Shanghai &gt; /etc/timezone
+======
+# ls -lh /
+lib64 -&gt; lib
 
-dbus-uuidgen &gt; /etc/machine-id
-apt-get autoremove -y
-apt-get clean -y
+# ls lib
+ld-linux-x86-64.so.2  libc.so.6             libmvec.so.1          libpthread.so.0
+libanl.so.1           libdl.so.2            libnsl.so.1           libresolv.so.2
+libatomic.so.1        libgcc_s.so.1         libnss_dns.so.2       librt.so.1
+libatomic.so.1.2.0    libm.so.6             libnss_files.so.2     libutil.so.1
 
-tar -cvpf /tmp/system.tar --directory=/ \
-  --exclude=proc --exclude=sys --exclude=dev --exclude=run \
-   --exclude=boot .
-
--e &quot;var/cache/apt/archives/*&quot; \
--e &quot;root/*&quot; \
--e &quot;root/.*&quot; \
--e &quot;tmp/*&quot; \
--e &quot;tmp/.*&quot; \
--e &quot;swapfile&quot;
-</code></pre>
-<h1 id="about-links">About Links</h1>
-<p><a href="https://classpert.com/classpertx/courses/building-a-programming-language/cohort">https://classpert.com/classpertx/courses/building-a-programming-language/cohort</a></p>
-<p><a href="https://mirrors.aliyun.com/lfs/lfs-packages/11.2">https://mirrors.aliyun.com/lfs/lfs-packages/11.2</a></p>
-<p><a href="https://tldp.org/HOWTO/From-PowerUp-To-Bash-Prompt-HOWTO.html">https://tldp.org/HOWTO/From-PowerUp-To-Bash-Prompt-HOWTO.html</a></p></div>
+# ldd hello
+        linux-vdso.so.1 (0x00007ffc54532000)
+        libc.so.6 =&gt; /lib64/libc.so.6 (0x000078af56817000)
+        /lib64/ld-linux-x86-64.so.2 (0x000078af569fd000)
+</code></pre></div>
             </div>
         </div>
 
